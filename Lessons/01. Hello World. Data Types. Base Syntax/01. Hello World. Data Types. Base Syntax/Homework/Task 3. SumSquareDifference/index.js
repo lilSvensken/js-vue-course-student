@@ -1,4 +1,4 @@
-const task1_SumSquareDifference = (num) => {
+const SumSquareDifference = (num) => {
     // Начало
     let summofsquares = 0;
     let squareofsumm = 0;
@@ -10,4 +10,4 @@ const task1_SumSquareDifference = (num) => {
     // Конец
 };
 
-export default task1_SumSquareDifference;
+export default SumSquareDifference;
