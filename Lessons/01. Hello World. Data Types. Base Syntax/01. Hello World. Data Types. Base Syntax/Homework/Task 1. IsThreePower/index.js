@@ -5,7 +5,7 @@ const isThreePower = (num) => {
             return true;
         }
     } return false
-    // Конец 
+    // Конец
 };
 
 export default isThreePower;
