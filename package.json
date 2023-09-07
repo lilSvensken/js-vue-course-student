@@ -53,7 +53,7 @@
             "jest-junit"
         ],
         "snapshotSerializers": [
-            "jest-serializer-vue"
+            "<rootDir>/node_modules/jest-serializer-vue"
         ],
         "transformIgnorePatterns": [
             "/node_modules/(?!@vue/test-utils)"
