@@ -1,4 +1,4 @@
-import isTicketHappy from './index';
+ import isTicketHappy from './index';
 
 describe('01.c.3 isTicketHappy', () => {
     it('01.c.3.1 happy ticket', () => {
