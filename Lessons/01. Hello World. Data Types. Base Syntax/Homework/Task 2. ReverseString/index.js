@@ -1,16 +1,10 @@
 const reverseString = (str) => {
     // Начало
-    function rec(str, newStr) {
-        if (str.length === 1) {
-            return newStr += str;
-        } else {
-            newStr += str[str.length - 1];
-            rec(str.slice(0, str.length - 1), newStr);
-        }
+    if (str.length === 0) {
+        return "";
+    } else {
+        return reverseString(str.slice(1)) + str[0];
     }
-
-    let newStr = "";
-    return rec(str, newStr);
     // Конец
 };
 
