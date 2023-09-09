@@ -64,7 +64,7 @@ cd Desktop
 - Клонируем удаленный репозиторий на локальную машину:
 
 ```
-git clone https://github.com/42praktika/JS-and-Vue-Course-2022.git
+git clone https://github.com/lilSvensken/js-vue-course-student.git
 ```
 
 Если `git` не будет давать возможность склонировать репозиторий по паролю, необходимо
