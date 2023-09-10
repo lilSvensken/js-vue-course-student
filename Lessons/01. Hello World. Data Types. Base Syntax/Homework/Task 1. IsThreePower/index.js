@@ -1,12 +1,10 @@
 const isThreePower = (num) => {
-    if(num < 1){
+    if (num <= 0) {
         return false;
-    }else if(num === 1){
-        return true;
+    } else {
+        for (let i = 0; i <= Math.sqrt(num); i++) {
+            return Math.pow(3, i) === num;
+        }
     }
-    else{
-        return num % 3 === 0;
-    }
-
 };
 export default isThreePower;
