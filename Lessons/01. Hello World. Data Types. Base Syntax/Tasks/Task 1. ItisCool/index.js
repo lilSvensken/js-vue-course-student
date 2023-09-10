@@ -16,5 +16,4 @@ const itisCool = (begin, end) => {
         }
     }
 };
-itisCool(11, 20);
-//export default itisCool;
+export default itisCool;
