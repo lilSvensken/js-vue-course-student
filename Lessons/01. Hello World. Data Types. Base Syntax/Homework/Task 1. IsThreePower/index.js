@@ -10,5 +10,4 @@ const isThreePower = (num) => {
         return false;
     }
 };
-console.log(isThreePower(0));
-//export default isThreePower;
+export default isThreePower;
