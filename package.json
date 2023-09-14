@@ -21,6 +21,7 @@
         "css-loader": "^6.7.1",
         "eslint": "^8.28.0",
         "file-loader": "^6.2.0",
+        "jasmine": "^5.1.0",
         "jest": "^27.0.0",
         "jest-cli": "^27.0.0",
         "jest-fetch-mock": "^3.0.3",
