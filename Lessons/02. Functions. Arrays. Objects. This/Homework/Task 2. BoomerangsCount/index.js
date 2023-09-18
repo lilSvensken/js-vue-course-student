@@ -7,6 +7,7 @@ const getBoomerangsCount = (numbers) => {
   }
   return count;
 };
+export default getBoomerangsCount;
 
 /* #### Задание
 
