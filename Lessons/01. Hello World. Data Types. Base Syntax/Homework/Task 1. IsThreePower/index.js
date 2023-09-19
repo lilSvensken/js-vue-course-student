@@ -1,7 +1,16 @@
 const isThreePower = (num) => {
-    // Начало
+    if(num < 1){
+        return false;
+    }
+    while(num > 1){
+        if(num % 3 === 0){
+            num /= 3;
+        }else{
 
-    // Конец
+            return false;
+        }
+    }
+    return true;
 };
 
 export default isThreePower;
