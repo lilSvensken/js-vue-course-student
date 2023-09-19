@@ -1,7 +1,9 @@
 const moreFunction = (number) => {
-    // Начало
-
-    // Конец
+    return (numbers) => {
+        return numbers.map((nums) => {
+            return nums / number
+        })
+    }
 };
 
 export default moreFunction;
