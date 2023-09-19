@@ -1,7 +1,10 @@
 const transformFortyTwo = (numbers) => {
-    // Начало
+  // Начало
 
-    // Конец
+  return numbers.map((num) => {
+    return num % 42 === 0 ? "forty two!" : num;
+  });
+  // Конец
 };
 
 export default transformFortyTwo;
