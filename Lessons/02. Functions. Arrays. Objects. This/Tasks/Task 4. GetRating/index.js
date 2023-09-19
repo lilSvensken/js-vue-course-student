@@ -1,7 +1,6 @@
 const getRating = (object) => {
-    // Начало
-    
-    // Конец
+    const {likes, dislikes} = object;
+    return likes - dislikes;
 };
 
 export default getRating;

@@ -1,7 +1,12 @@
 const getHammingWeight = (num) => {
-    // Начало
+    let weight = 0;
 
-    // Конец
+  while (num !== 0) {
+    weight += num & 1; 
+    num >>>= 1; 
+  }
+
+  return weight;
 };
 
 export default getHammingWeight;
