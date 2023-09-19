@@ -1,7 +1,8 @@
 const transformFortyTwo = (numbers) => {
-    for (let i = 0; i < numbers.length; i++)
-        if (numbers[i] % 42 === 0) numbers[i] = "forty two!"
-    return numbers;
+    return numbers.map(num => {
+        if (num % 42 === 0) num = "forty two!"
+        return num
+    })
 };
 
 export default transformFortyTwo;
