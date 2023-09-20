@@ -1,4 +1,5 @@
 class CityGame {
+<<<<<<< HEAD
 	cities = [];
 
 	constructor(pl1, pl2) {
@@ -24,6 +25,37 @@ class CityGame {
 		this.cities = [];
 		return 'The game has been restarted!';
 	}
+=======
+    player1;
+    player2;
+    score = 0
+    cities;
+    constructor(player1, player2){
+        this.player1 = player1
+        this.player2 = player2
+    }
+
+    play(city){
+        if (this.cities == []){
+            this.cities.add(city)
+            this.score += 1
+        } 
+        else if (this.cities.at(-1).split("").at(-1) == city.split("").at().toLowerCase()){
+            this.cities.push(city)
+            this.score += 1
+            return this.cities
+        }
+        else{
+            if (score % 2 == 0) return 'Game over! The winner is ${player2}'
+            else return 'Game over! The winner is ${player1}'
+        }   
+    }
+    restart(){
+        this.cities = []
+        this.score = 0
+        return 'The game has been restarted!'
+    }
+>>>>>>> 8042429 (homework)
 }
 
 export default CityGame;
