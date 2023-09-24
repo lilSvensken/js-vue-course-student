@@ -8,12 +8,12 @@ class CarBrand {
         this.accelerationTime = accelerationTime;
     }
     runDrag(time){
-        return this.model + "runs drag for" + time + "seconds";
+        return this.model + " runs drag for " + time + " seconds";
     }
 
     getWhoIsFaster(car){
         if(this.accelerationTime < car.accelerationTime){
-            return this.model + "is faster for" + car.accelerationTime - this.accelerationTime + "seconds";
+            return this.model + " is faster for " + car.accelerationTime - this.accelerationTime + " seconds";
         }
     }
 }
