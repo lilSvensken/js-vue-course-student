@@ -13,7 +13,10 @@ class CarBrand {
 
     getWhoIsFaster(car){
         if(this.accelerationTime < car.accelerationTime){
-            return this.model + " is faster for " + car.accelerationTime - this.accelerationTime + " seconds";
+            return "" + this.model + " is faster for " + car.accelerationTime - this.accelerationTime + " seconds";
+        }
+        else{
+            return "" + car.model + " is faster for " + this.accelerationTime - car.accelerationTime + " seconds";
         }
     }
 }
