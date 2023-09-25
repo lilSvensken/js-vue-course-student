@@ -12,7 +12,7 @@
 ```
 getBoomerangsCount([10, 11, 12, 13]);        // 0
 getBoomerangsCount([10, 11, 10, 13]);        // 1
-getBoomerangsCount([9, 5, 9, 5, 1, 1, 1]);   // 2
+getBoomerangsCount([10, 11, 10, 13]);   // 2
 getBoomerangsCount([9, 5, 4, 5, 4, 1, 4]);   // 3
 getBoomerangsCount([]);                      // 0
 ```

@@ -5,7 +5,7 @@ const getHammingWeight = (num) => {
     if (num % 2 == 1) {
       cnt++;
     }
-    num = Math.floor(num / 2);
+    num = Math.floor(num / 2); /*округляет до меньшей стороны */
   }
   return cnt;
   // Конец

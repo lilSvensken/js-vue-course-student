@@ -10,6 +10,10 @@ const getLastWordLength = (str) => {
   const lastWord = words[words.length - 1];
   return lastWord.length;
   // Конец
+
+  /*
+  return str.trim().split(' ').at(-1).length;
+  */
 };
 
 export default getLastWordLength;

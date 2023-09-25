@@ -6,5 +6,7 @@ const transformFortyTwo = (numbers) => {
   });
   // Конец
 };
-
+/*
 export default transformFortyTwo;
+*/
+console.log(transformFortyTwo([1,24,42,84]));
