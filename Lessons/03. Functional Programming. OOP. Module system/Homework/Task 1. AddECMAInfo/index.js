@@ -6,9 +6,7 @@ const javaScriptData = {
 };
 
 const addECMAInfo = () => {
-    // Начало
-
-    // Конец
+    return javaScriptData.currentECMA = Immutable("2023");
 };
 
 export default addECMAInfo;

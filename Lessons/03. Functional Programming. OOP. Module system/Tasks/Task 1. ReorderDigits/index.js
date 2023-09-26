@@ -1,7 +1,10 @@
 const reorderDigits = (type, ...numbers) => {
-    // Начало
-
-    // Конец
+    if (type === 'asc'){
+        numbers.sort((a, b) => a - b)
+    }
+    else if (type === 'desc'){
+        numbers.sort((a, b) => b - a)
+    }
 };
 
 export default reorderDigits;
