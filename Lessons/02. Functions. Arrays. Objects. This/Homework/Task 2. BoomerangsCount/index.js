@@ -5,6 +5,6 @@ const getBoomerangsCount = (numbers) => {
         if (numbers[i-1] == numbers[i+1] && numbers[i-1] != numbers[i]) count++;
     }
     return count;
-};
+};   
 
 export default getBoomerangsCount;
