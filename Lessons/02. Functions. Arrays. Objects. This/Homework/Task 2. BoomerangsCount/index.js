@@ -1,7 +1,7 @@
 const getBoomerangsCount = (numbers) => {
      let count = 0;
   for(let i = 0; i < numbers.length-2; i ++){
-    if((numbers[i]===numbers[i+2]) && numbers[i]!=numbers[i+1]){
+    if((numbers[i]===numbers[i+2]) && (numbers[i]!=numbers[i+1])){
       count ++;
     }
   }
@@ -13,7 +13,7 @@ export default getBoomerangsCount;
 
 Реализуйте функцию, которая возвращает количество бумерангов в массиве.
 
-### Теория
+### Теория2
 
 Бумеранг — деревянная метательная палица. В программировании бумеранг - массив из 3-х
 чисел, первое и последнее из которых равны между собой, а среднее отличается.
