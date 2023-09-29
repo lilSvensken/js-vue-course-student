@@ -1,7 +1,5 @@
 const getLastWordLength = (str) => {
-    // Начало
-
-    // Конец
+	return str.trim().split(' ').at(-1).length;
 };
 
 export default getLastWordLength;
