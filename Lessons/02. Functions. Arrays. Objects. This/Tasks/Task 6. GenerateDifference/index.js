@@ -6,6 +6,9 @@ const onlyUnique = (array) => [ ...new Set(array) ];
 
 const generateDifference = (objOne, objTwo) => {
     // Начало
+    const copyObjOne = getCopy(objOne);
+    const copyObjTwo = getCopy(objTwo);
+
 
     // Конец
 };
