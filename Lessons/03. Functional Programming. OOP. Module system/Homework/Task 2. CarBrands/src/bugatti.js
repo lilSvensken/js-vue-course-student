@@ -2,7 +2,7 @@ import CarBrand from './carBrand';
 
 class BugattiBrand extends CarBrand {
     // Начало
-    constructor() {
+    constructor(name, n, time, cost) {
         super();
     }
 

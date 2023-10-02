@@ -1,12 +1,10 @@
 import CarBrand from './carBrand';
 
 class LadaBrand extends CarBrand {
-    // Начало
-    constructor() {
+    constructor(name, n, time, location) {
         super();
     }
 
-    // Конец
 }
 
 export default LadaBrand;

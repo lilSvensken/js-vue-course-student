@@ -5,8 +5,11 @@ const javaScriptData = {
     cool: true,
 };
 
-const addECMAInfo = () => {
-    return javaScriptData.currentECMA = Immutable("2023");
+const addECMAInfo = (jSD) => {
+    return {
+        ...javaScriptData,
+        currentECMA: 2023  
+    };
 };
 
 export default addECMAInfo;
