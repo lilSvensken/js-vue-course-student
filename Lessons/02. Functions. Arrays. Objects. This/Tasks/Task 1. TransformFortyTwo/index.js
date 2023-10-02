@@ -7,4 +7,5 @@ const transformFortyTwo = (number) => {
     }
   })
 };
+
 export default transformFortyTwo;
