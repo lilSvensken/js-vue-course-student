@@ -6,7 +6,7 @@ class CarBrand {
     }
 
     runDrag(time) {
-        return this.carCompany + " runs drag for " + time + "seconds";
+        return this.carCompany + " runs drag for " + time + " seconds";
     }
 
     getWhoIsFaster(car) {
