@@ -242,7 +242,7 @@ watch(_state__WEBPACK_IMPORTED_MODULE_1__["default"], 'openedModal', () => {
   var supportDefineProperty = false;
 
   try {
-    supportDefineProperty = Object.defineProperty && Object.defineProperty({}, 'x', {});
+    supportDefineProperty = Object.defineProperty && Object.defineProperty({}, 'num', {});
   } catch (ex) {
     /* not supported */
   }

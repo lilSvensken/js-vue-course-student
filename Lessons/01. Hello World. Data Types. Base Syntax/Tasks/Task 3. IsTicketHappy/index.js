@@ -1,3 +1,4 @@
+
 const isTicketHappy = (num) => {
     let str = num + "";
     let sum1 = 0, sum2 = 0;

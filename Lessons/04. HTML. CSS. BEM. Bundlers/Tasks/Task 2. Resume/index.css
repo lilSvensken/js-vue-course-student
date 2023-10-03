@@ -1,0 +1,39 @@
+.resume {
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+    margin: auto;
+    max-width: 900px;
+    line-height: 1.5;
+    padding: 32px 48px;
+    background: #FCFCFC;
+    border-radius: 6px;
+    border: 1px solid #BEBEBE;
+    box-shadow: 0 1.5px 3px rgb(0 17 51 / 24%), 0 0 1px rgb(0 17 51 / 32%);
+    box-sizing: border-box;
+}
+.resume__header {
+    margin-bottom: 40px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.resume__header-info{
+    text-align: left;
+    padding: 50px 25px 25px;
+}
+.resume__main-header {
+    font-size: 24px;
+    font-weight: 800;
+    border-bottom: 1px solid #545960;
+    padding-bottom: 0;
+}
+.resume__footer{
+        margin-bottom: 20px;
+        margin-top: 30px;
+        text-align: center;
+}
+.resume__footer-item {
+    font-size: 18px;
+    margin-top: 6px;
+}
+
