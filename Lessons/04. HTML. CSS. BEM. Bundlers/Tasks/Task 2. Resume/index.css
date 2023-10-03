@@ -1,7 +1,52 @@
-.resume {
-    padding: 10px;
-    margin: 20px;
-    font-family: Verdana, Tahoma, sans-serif;
-    background: #ffeed6;
-    border-radius: 10px;
+/*.resume {*/
+/*    padding: 10px;*/
+/*    margin: 20px;*/
+/*    font-family: Verdana, Tahoma, sans-serif;*/
+/*    background: #ffeed6;*/
+/*    border-radius: 10px;*/
+/*}*/
+
+/*.link{*/
+/*    float: left;*/
+/*    margin: 0;*/
+/*}*/
+.ol{
+    float: left; /* Обтекание справа */
+    width: 50%; /* Ширина текстового блока */
 }
+.svg{
+    width: 1440px;
+    height: 276px;
+    flex-shrink: 0;
+    fill: #FAFAFA;
+    filter: drop-shadow(0px 0.33000001311302185px 0px rgba(60, 60, 67, 0.29));
+}
+.column{
+    column-count: 2;
+    column-width: 40px;  /*ширина колонок*/
+
+    column-count: 2;  /*количество колонок*/
+
+    column-gap: 4%;  /*расстояние между колонками*/
+
+background: #fff2e1;
+}
+
+.wrapper {
+    display: flex;
+    margin-left: 10px;
+}
+
+ .right, .left {
+    height: 100%;
+     margin: auto;
+}
+ .job,.myself,.hobbies,.education{
+     margin-left:10px;
+ }
+ .end{
+     text-align: center;
+ }
+
+
+
