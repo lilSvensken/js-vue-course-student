@@ -1,7 +1,6 @@
 const moreFunction = (number) => {
-    // Начало
+    return (arr) => arr.map( i => i / number);
 
-    // Конец
 };
 
 export default moreFunction;
