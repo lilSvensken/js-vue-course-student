@@ -9,7 +9,7 @@ const addECMAInfo = () => {
     // Начало
     return {
         ...javaScriptData,
-        currentCMA: 2023,
+        currentECMA: 2023,
     } 
     // Конец
 };
