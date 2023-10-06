@@ -1,3 +1,23 @@
 .tic-tac-toe {
+    border: 1px solid #B0B0B0;
+    width: fit-content;
+}
 
+.tic-tac-toe__row {
+    display: flex;
+    align-items: center;
+}
+
+.tic-tac-toe__item {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #B0B0B0;
+}
+
+.tic-tac-toe__item svg {
+    width: 24px;
+    height: 24px;
 }

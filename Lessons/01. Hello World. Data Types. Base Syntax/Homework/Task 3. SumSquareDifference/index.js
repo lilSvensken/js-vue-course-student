@@ -1,6 +1,5 @@
 const sumSquareDifference = (num) => {
     // Начало
-<<<<<<< HEAD
     let sumSquare = 0;
     let squareSum = 0;
     if (num > 0) {
@@ -11,10 +10,6 @@ const sumSquareDifference = (num) => {
     }
     squareSum **= 2;
     return squareSum - sumSquare;
-=======
-    let res = squareSum(num) - sumSquare(num);
-    return res;
->>>>>>> e3a22bd2a6535a38e74a74a326de368ead0a142c
     // Конец
 };
 

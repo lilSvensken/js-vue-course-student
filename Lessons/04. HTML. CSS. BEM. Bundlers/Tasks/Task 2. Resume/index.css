@@ -1,7 +1,63 @@
+body {
+    padding: 20px;
+    background: #dbcff7;
+}
+
+p {
+    font-size: 22px;
+}
+
 .resume {
     padding: 10px;
-    margin: 20px;
+    margin: auto;
     font-family: Verdana, Tahoma, sans-serif;
-    background: #ffeed6;
-    border-radius: 10px;
+    background: #f2eefd;
+    border-radius: 40px;
+    max-width: 1200px;
+}
+
+.resume__header {
+    margin-bottom: 40px;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1.resume__header-title {
+    font-size: 36px;
+    padding-bottom: 0;
+    font-weight: 400;
+    align-items: center;
+}
+
+.resume__header-link {
+    font-size: 17px;
+}
+
+.resume__header-info {
+    flex-grow: 1;
+}
+
+.resume__main-header {
+    font-size: 32px;
+    font-weight: 400;
+    border-bottom: 2px solid #545960;
+    padding-bottom: 2px;
+}
+
+.resume__main li {
+    font-size: 22px;
+}
+
+.resume__footer {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.resume__footer-item {
+    font-size: 14px;
+    margin-top: 5px;
 }

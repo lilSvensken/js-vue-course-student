@@ -1,6 +1,5 @@
 class CarBrand {
     // Начало
-<<<<<<< HEAD
     constructor(brand, power, runTime) {
         this.brand = brand;
         this.power = power;
@@ -17,15 +16,6 @@ class CarBrand {
         } else {
             return car.brand + " is faster for " + (this.runTime - car.runTime) + " seconds";
         }
-=======
-    constructor(brandModel, power, acceleration){
-        this.brandModel = brandModel;
-        this.power = power;
-        this.acceleration = acceleration;
-    }
-    runDrag(time){
-        return(this.brandModel + ' ' + this.name + ' runs drag for ' + time + ' seconds');
->>>>>>> e3a22bd2a6535a38e74a74a326de368ead0a142c
     }
 
     getWhoIsFaster(car) {
