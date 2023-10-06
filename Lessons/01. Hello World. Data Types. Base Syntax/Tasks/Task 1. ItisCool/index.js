@@ -14,4 +14,15 @@ const itisCool = (begin, end) => {
     // Конец
 };
 
+// более лаконичная  этой же функции
+// const itisCool = (begin, end) => {
+// 	for (let i = begin; i <= end; i += 1) {
+// 		const hasItis = i % 3 === 0;
+// 		const hasCool = i % 5 === 0;
+// 		const itisPart = hasItis ? 'Itis' : '';
+// 		const coolPart = hasCool ? 'Cool' : '';
+// 		console.log(`${itisPart}${coolPart}` || i);
+// 	}
+// };
+
 export default itisCool;

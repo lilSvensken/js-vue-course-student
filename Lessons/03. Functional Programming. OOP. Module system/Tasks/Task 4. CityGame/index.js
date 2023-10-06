@@ -30,8 +30,6 @@ class CityGame {
         this.cities = [];
         return 'The game has been restarted!';
     }
-
-    // Конец
 }
 
 export default CityGame;
