@@ -1,7 +1,177 @@
+body{
+    background-color: #fff6dc;
+}
+@font-face {
+    font-family: 'roboto!';
+    src: local('Roboto');
+    src: url("/Users/danil/WebstormProjects/lab42/js-vue-course-student/Lessons/04. HTML. CSS. BEM. Bundlers/Tasks/Task 2. Resume/fonts/Roboto/Roboto-Regular.ttf");
+}
+
 .resume {
-    padding: 10px;
-    margin: 20px;
-    font-family: Verdana, Tahoma, sans-serif;
-    background: #ffeed6;
-    border-radius: 10px;
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+    margin: auto;
+    max-width: 900px;
+    line-height: 1.5;
+    background: #FCFCFC;
+    border: 1px solid #BEBEBE;
+    box-shadow: 0 1.5px 3px rgb(0 17 51 / 24%), 0 0 1px rgb(0 17 51 / 32%);
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+}
+.header__block-photo{
+    background-color:#272727;
+}
+.header__photo{
+    width: 270px;
+    height: 400px;
+}
+.header__top-block{
+    margin-top: 85px;
+    margin-bottom: 85px;
+    width: 700px;
+    box-shadow: 0 1.5px 3px rgb(0 17 51 / 24%), 0 0 1px rgb(0 17 51 / 32%);
+    background-color: #f1c232;
+}
+.header__name{
+    margin: 0;
+    padding-top: 70px;
+    padding-left: 50px;
+    font-size: 40px;
+    font-weight: 100;
+    font-family: "roboto!",sans-serif;
+}
+.header__profession{
+    font-weight: 100;
+    font-size: 20px;
+    margin: 0;
+    padding-left: 50px;
+    font-family: "roboto!",sans-serif;
+}
+.section__block{
+    display: flex;
+}
+.section__block-left{
+    width: 270px;
+    background-color: #272727;
+}
+.section__block-left-title{
+    margin-top: 0;
+    padding-top: 30px;
+    padding-left: 50px;
+    color: white;
+    font-weight: 100;
+    margin-bottom: 10px;
+    font-family: "roboto!",sans-serif;
+}
+.section__block-left-list{
+    padding-left: 70px;
+    list-style-type: none;
+}
+.block-left-list-point{
+    margin-bottom: 10px;
+    color: white;
+}
+.block-left-text{
+    margin: 0;
+    font-family: "roboto!",sans-serif;
+}
+.line-param{
+    height: 3px;
+    margin-left: 50px ;
+    box-shadow: 0 1.5px 3px rgb(0 17 51 / 24%), 0 0 1px rgb(0 17 51 / 32%);
+}
+.yellow-line{
+    width: 220px;
+    background-color: #f1c232;
+}
+.section__block-right-title{
+    margin-top: 0;
+    padding-top: 30px;
+    margin-bottom: 10px;
+    color: #272727;
+    margin-left: 50px;
+}
+.black-line{
+    width: 500px;
+    background-color: #272727;
+}
+.block-right-text{
+    width: 500px;
+    margin-left: 50px;
+    font-family: "roboto!",sans-serif;
+}
+.section__block-right-list{
+    list-style-type: none;
+    padding-left: 50px;
+}
+.link-site{
+    text-decoration: none;
+    color: black;
+}
+.button-example-site{
+    border: 1px solid #272727 ;
+    background-color: white;
+}
+.footer{
+    display: flex;
+}
+.footer__left{
+    height: 300px;
+    width: 270px;
+    background-color: #272727;
+}
+.footer__left-point{
+    padding-top: 20px;
+    display: flex;
+    width: 270px;
+}
+.footer__left-point-yellow{
+    width: 63px;
+    height: 22px;
+    background-color: #f1c232;
+}
+.footer__left-point-black{
+    padding-left: 22px;
+    width: 270px;
+    font-size: 14px;
+    color: white;
+    height: 22px;
+    background-color: #444444;
+}
+.footer__point-text{
+    color: white;
+    font-size: 13px;
+    padding-left: 70px;
+}
+.icon-web{
+    padding-right: 70px;
+    width: 70px;
+}
+.footer__block-left{
+    width: 270px;
+    background-color: #272727;
+}
+.footer__block-left-title{
+    margin-top: 0;
+    padding-top: 30px;
+    padding-left: 50px;
+    color: white;
+    font-weight: 100;
+    margin-bottom: 10px;
+    font-family: "roboto!",sans-serif;
+}
+.footer__block-right-title{
+    margin-top: 0;
+    padding-top: 30px;
+    margin-bottom: 10px;
+    color: #272727;
+    margin-left: 50px;
+}
+.footer__right-icons{
+    padding-left: 120px;
+    display: flex;
+    padding-top: 70px;
 }
