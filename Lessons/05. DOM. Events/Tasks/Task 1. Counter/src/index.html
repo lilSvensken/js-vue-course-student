@@ -14,46 +14,13 @@
             type="text/css"
             href="./index.css"
         >
-
-        <script type="module" src="../index.js"></script>
     </head>
     <body>
-        <div id="host" class="main">
-            <button id = 'btn' type="button" class = "btn2" name = "btnname">КНОПКА 1</button>
-            <button id = 'btn2' type="button" class = "btn2" name = "btnname">КНОПКА 2</button>
-            <button id = 'btn3' type="button" class = "btn2" name = "btnname">КНОПКА 3</button>
-
-            <button id="element">
-                Уникальная кнопка
-            </button>
-        </div>
+        <div class="main"></div>
     </body>
-
-    <form id="form">
-        <label>
-            <input type ="checkbox">
-            <span>Я согласен на обработку персоальных данных</span>
-        </label>
-
-        <br>
-
-        <label>
-            <input type ="radio" name ="var" value="1">
-            <span>Вариант 1</span>
-        </label>
-        <label>
-            <input type ="radio" name ="var" value="2">
-            <span>Вариант 2</span>
-        </label>
-        <label>
-            <input type ="radio" name ="var" value="3">
-            <span>Вариант 3</span>
-        </label>
-
-        <button type ="submit">ОТПРАВИТЬ</button>
-    </form>
-
-    <div id ="block" style ='width: 500px; height: 200px; background: grey'>
-        ОБЫЧНЫЙ БЛОК
-    </div>
+    <script type="module" src="../index.js"></script>
+    <script type="module">
+        import setCounter from '../index.js';
+        setCounter();
+    </script>
 </html>
