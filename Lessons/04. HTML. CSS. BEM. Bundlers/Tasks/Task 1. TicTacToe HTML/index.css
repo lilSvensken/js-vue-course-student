@@ -1,3 +1,28 @@
-.tic-tac-toe {
-
+.main{
+    border: 2px solid #B0B0B0;
+    width: 150px;
+    height: 150px;
+}
+.main__section{
+    display: flex;
+    width: 150px;
+    height: 50px;
+}
+.main__section-block{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border-right: 2px solid #B0B0B0;
+    border-bottom: 2px solid #B0B0B0 ;
+}
+.main__section-block:last-child{
+    border-right: 0;
+}
+.main__section:last-child{
+    border-bottom: 0;
+}
+.tic-tac-icon{
+    padding-top: 5px ;
+    width: 40px;
+    height: 40px;
 }
