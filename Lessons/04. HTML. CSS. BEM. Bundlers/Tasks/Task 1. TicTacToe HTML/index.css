@@ -1,3 +1,52 @@
-.tic-tac-toe {
+body {
+    padding: 100px;
+}
 
+.tic-tac-toe {
+    border: 2px;
+    width: fit-content;
+}
+
+.tic-tac-toe__row {
+    display: flex;
+    align-items: center;
+}
+
+.tic-tac-toe__item {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tic-tac-toe__item img {
+    width: 60px;
+    height: 60px;
+}
+
+
+.tic-tac-toe__row:last-of-type {
+    border-bottom: 2px solid #545960;
+}
+
+.tic-tac-toe__row:first-child {
+    border-top: 2px solid #545960;
+}
+
+.tic-tac-toe__row:not(:last-of-type) {
+    border-bottom: 2px solid #545960;
+}
+
+
+.tic-tac-toe__item:not(:last-of-type) {
+    border-right: 2px solid #545960;
+}
+
+.tic-tac-toe__item:first-child {
+    border-left: 2px solid #545960;
+}
+
+.tic-tac-toe__item:last-of-type {
+    border-right: 2px solid #545960;
 }
