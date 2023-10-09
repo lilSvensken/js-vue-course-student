@@ -1,3 +1,40 @@
-.tic-tac-toe {
+html,
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.tic-tac-toe {
+    display: flex;
+    flex-wrap: wrap;
+    width: 307px;
+}
+
+.tic-tac-toe__cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+
+.tic-tac-toe__cell:nth-child(1n) {
+    border-right: none;
+}
+
+.tic-tac-toe__cell:nth-child(3n) {
+    border-right: 2px solid;
+}
+
+.tic-tac-toe__cell:nth-child(1n) {
+    border-bottom: none;
+}
+
+.tic-tac-toe__cell:nth-last-child(-n+3) {
+    border-bottom: 2px solid;
 }
