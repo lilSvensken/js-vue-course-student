@@ -1,7 +1,83 @@
+p {
+    font-size: 22px;
+}
+
+body {
+    padding: 40px;
+    background: rgb(251, 214, 243);
+}
+
 .resume {
-    padding: 10px;
-    margin: 20px;
-    font-family: Verdana, Tahoma, sans-serif;
-    background: #ffeed6;
-    border-radius: 10px;
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+    margin: auto;
+    max-width: 1200px;
+    line-height: 1.5;
+    padding: 32px 48px;
+    background: #f1b1b1;
+    border-radius: 200px;
+    border: 5px solid #f86868;
+    box-shadow: 0 2px 30px rgba(235, 80, 101, 0.773), 0 0 30px rgba(241, 7, 241, 0.964);
+    box-sizing: border-box;
+}
+
+
+h1.resume__header-title {
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+    padding-bottom: 0;
+    font-weight: 4000;
+    text-shadow: 3px 3px 3px rgba(233, 78, 78, 0.737), 3px 3px 3px rgba(246, 44, 202, 0.945), 3px 3px 3px rgba(231, 44, 134, 0.879);
+
+}
+
+.resume__header {
+    margin-bottom: 40px;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resume__main-header {
+    font-size: 32px;
+    font-weight: 400;
+    border-bottom: 1px solid #545960;
+    padding-bottom: 0;
+}
+
+.resume__header-info-section {
+    flex-grow: 1;
+}
+
+.resume__footer {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.resume__footer-item {
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+.resume__main-experience {
+    display: flex;
+}
+
+.resume__main-experience-item {
+    width: 50%;
+}
+
+.resume__main-experience-item--last {
+    margin-left: 30px;
+}
+
+.resume__main-interests li {
+    font-size: 20px;
+}
+
+.resume__header-link {
+    font-size: 20px;
 }
