@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const CHECK_NUM = 42;
 
 const transformFortyTwo = (arr) => {
@@ -8,14 +7,3 @@ const transformFortyTwo = (arr) => {
 };
 
 export default transformFortyTwo;
-=======
-const transformFortyTwo = (numbers) => {
-    return numbers.map((num) => {
-        if (num % 42 == 0) num = 'forty two!'
-        return num
-    })
-};
-
-
-export default transformFortyTwo;
->>>>>>> 8042429 (homework)
