@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Task 1. Counter</title>
+        <title>Task 1. FetchData</title>
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -16,11 +16,20 @@
         >
     </head>
     <body>
-        <div class="main"></div>
+        <div class="main">
+            <input
+                class="form-control"
+                placeholder="Я хочу найти..."
+            />
+        </div>
     </body>
-    <script type="module" src="../index.js"></script>
+    <script
+        type="module"
+        src="../index.js"
+    ></script>
     <script type="module">
-        import setCounter from '../index.js';
-        setCounter();
+        import fetchData from '../index.js';
+
+        fetchData();
     </script>
 </html>
