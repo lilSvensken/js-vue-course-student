@@ -43,10 +43,4 @@ radioArr2.forEach(inputItem => {
     })
 })
 
-const formRef = document.getElementById("form");
-
-formRef.addEventListener("submit", (event) => {
-    event.preventDefault();
-    console.log("SUBMIT нажат");
-})
-;
+export default setCounter;
