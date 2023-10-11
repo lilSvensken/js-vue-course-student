@@ -20,8 +20,17 @@
             <div class="to-do__header">
                 <h2>Мой первое ToDo-приложение на js</h2>
             </div>
-            <div class="to-do__main"></div>
-            <div class="to-do__tasks"></div>
+            <div class="to-do__main">
+                <input class="to-do__main__input" type="text" placeholder="Введите наименование задачи"/>
+                <button class="to-do__main__button-planned">Добавить в план</button>
+                <button class="to-do__main__button-completed">Добавить в сделанные</button>
+            </div>
+            <div class="to-do__tasks">
+                <span data-type="completed">Купить новый Iphone</span>
+                <span data-type="planned">Написать резюме</span>
+                <span data-type="planned">Отдохнуть</span>
+                <span data-type="completed">Продать старый Iphone</span>
+            </div>
         </div>
     </body>
     <script type="module" src="../index.js"></script>
