@@ -34,6 +34,7 @@ const setCalculator = () => {
     }
     buttonsElements = [...buttonsElements, ...ADDITIONAL_BUTTONS];
 
+
     buttonsElements.forEach(({type, text}) => {
         const button = document.createElement('button');
         button.classList.add('btn', 'btn-dark');
