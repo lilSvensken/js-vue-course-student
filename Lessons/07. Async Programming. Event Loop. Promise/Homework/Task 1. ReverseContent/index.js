@@ -1,4 +1,4 @@
-import {promises as fs, readFileSync} from 'fs';
+import {promises as fs} from 'fs';
 import path from 'path';
 
 
@@ -9,11 +9,10 @@ const getPath = (fileName) => path.join(__dirname, './__fixtures__', fileName);
 
 
 const reverseContent = (filepath) => {
-    let fileContent = fs.readFile(filepath, 'utf8');
-    fileContent.then(data => {
+     return fs.readFile(filepath, 'utf8').then(data => {
         const reversedData = data.split('\n').reverse().join('\n');
         return fs.writeFile(filepath, reversedData);
     })
-    return fileContent;
+
 };
 export default reverseContent;
