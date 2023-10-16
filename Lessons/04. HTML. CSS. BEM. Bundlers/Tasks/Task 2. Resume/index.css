@@ -1,87 +1,108 @@
-p {
-    font-size: 20px;
+body{
+    background-color: grey;
+
 }
-
-/*цвет фона*/
-body {
-    padding: 20px;
-    background: pink;
-}
-
-
 .resume {
+    background-image: url("assets/back.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: Tahoma, sans-serif;
     font-size: 16px;
     margin: auto;
     max-width: 900px;
     line-height: 1.5;
     padding: 32px 48px;
-    background: #FCFCFC;
     border-radius: 6px;
     border: 1px solid #BEBEBE;
     box-shadow: 0 1.5px 3px rgb(0 17 51 / 24%), 0 0 1px rgb(0 17 51 / 32%);
     box-sizing: border-box;
 }
-/*ссылки*/
-.resume__header-link {
-    margin-right: 20px;
-    text-decoration: none;
-    color: lightpink;
-}
-
-h1.resume__header-title {
-    font-size: 36px;
-    padding-bottom: 0;
-    font-weight: 400;
-}
-
-.resume__header {
-    margin-bottom: 40px;
-    margin-top: 20px;
-    text-align: center;
+.header__resume{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color:black;
+}
+.header__resume-photo {
+    margin-right: 60px;
+    margin-top: 85px;
 }
 
-.resume__main-header {
-    font-size: 32px;
-    font-weight: 400;
-    border-bottom: 1px solid #545960;
-    padding-bottom: 0;
+.header__photo{
+    width: 200px;
+    height: 250px;
+    background-color: #101010;
 }
+.header__resume-text {
+    margin-left: 60px;
+    margin-top: 85px;
+    width: 700px;
+    background-color: #101010;
+    text-align: right;
 
-.resume__header-info-section {
-    flex-grow: 1;
 }
-
-.resume__footer {
-    margin-bottom: 20px;
-    margin-top: 30px;
-    text-align: center;
+.header__resume-text-name{
+    color: white;
+    margin: 0;
+    padding-top: 35px;
+    padding-right: 50px;
+    font-size: 60px;
+    font-weight: 90;
 }
-
-.resume__footer-item {
-    font-size: 18px;
-    margin-top: 6px;
+.header__resume-text-profession{
+    color: #E5A142;
+    font-weight: 100;
+    margin: 0;
+    padding-right: 50px;
 }
+main{
+    background-color:black ;
 
-.resume__main-experience {
+}
+.section__block{
+    color: white;
     display: flex;
+    background-color:black;
+    width: 400px;
+    height: 250px;
+    padding-left: 100px;
+
+}
+.section__block-left{
+    padding-left: 0px;
+    text-align: left;
+}
+.section__block-left-text{
+    width: 280px;
+    height: 100px;
+}
+.section__block-right{
+    padding-left: 50px;
+}
+.section__block-right-title{
+
+}
+.section__block-list{
+    width: 280px;
+    height: 100px;
+   list-style-type: square;
+
 }
 
-.resume__main-experience-item {
-    width: 50%;
+.footer__items{
+    display: flex;
+    color: white;
+    font-size: 15px;
+    padding-left: 205px;
+    background-color: black;
 }
-
-.resume__main-experience-item--last {
-    margin-left: 30px;
-}
-
-.resume__main-interests li {
+.footer__text{
+    background-color: black;
+    margin-right: 30px;
     font-size: 20px;
 }
-
-.resume__header-link {
-    font-size: 20px;
+.footer__photo{
+    width: 40px;
+    height: 45px;
+    background-color: black;
+    margin-right: 30px;
 }
+
