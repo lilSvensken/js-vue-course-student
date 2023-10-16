@@ -6,9 +6,10 @@ const javaScriptData = {
 };
 
 const addECMAInfo = () => {
-    // Начало
-
-    // Конец
+    let clonedJavaScriptData = new Object();
+    Object.assign(clonedJavaScriptData, javaScriptData);
+    clonedJavaScriptData.currentECMA = 2023;
+    return clonedJavaScriptData;
 };
 
 export default addECMAInfo;
