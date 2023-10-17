@@ -72,7 +72,6 @@ const setCalculator = () => {
             button.addEventListener('click', (event) => {
                 const resultText = textBlock.textContent;
                 const sum = getSumOfText(resultText);
-
                 const resultBlock = document.querySelector('.calc__result-number');
                 resultBlock.textContent = sum;
             });

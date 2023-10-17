@@ -24,19 +24,7 @@ const setToDo = () => {
         });
     };
 
-    const buttonPlanned = document.createElement('button');
-    buttonPlanned.classList.add('btn', 'btn-danger');
-    buttonPlanned.textContent = 'Добавить в план';
 
-    const buttonCompleted = document.createElement('button');
-    buttonCompleted.classList.add('btn', 'btn-success');
-    buttonCompleted.textContent = 'Добавить в сделанные';
-
-    addListener(buttonPlanned, 'planned');
-    addListener(buttonCompleted, 'completed');
-
-    main.append(buttonPlanned);
-    main.append(buttonCompleted);
     // Конец
 };
 
