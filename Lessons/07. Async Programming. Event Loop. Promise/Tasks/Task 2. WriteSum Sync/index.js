@@ -1,8 +1,8 @@
-import fs from 'fs';
-import path from 'path';
+const fs = require('fs');
+const path = require('path');
 
 // Метод для отладки. В итоговом решении использоваться не должен
-const getPath = (fileName) => path.join(__dirname, './__fixtures__', fileName);
+// const getPath = (fileName) => path.join(__dirname, `__fixtures__/${fileName}`);
 // Пример использования функции
 // const currentPath = getPath('/one.txt');
 
@@ -21,4 +21,7 @@ const writeSumSync = (pathToFileOne, pathToFileTwo, pathToResultFile) => {
   // Конец
 };
 
-export default writeSumSync;
+writeSumSync(path.join(__dirname, '__fixtures__', 'one.txt'), path.join(__dirname, '__fixtures__', 'two.txt'), path.join(__dirname, '__fixtures__', 'result.txt'))
+
+
+//export default writeSumSync;
