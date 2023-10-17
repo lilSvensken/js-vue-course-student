@@ -14,13 +14,36 @@
             type="text/css"
             href="./index.css"
         >
+        <script type="module" src="../index.js"></script>
     </head>
     <body>
-        <div class="main"></div>
+        <div id="host" class="main">
+            <button id="btn" type="button" class="btn-2" name="btnName">КНОПКА 1</button>
+            <button id="btn2" type="button" class="btn-2" name="btnName">КНОПКА 2</button>
+            <button id="btn3" type="button" class="btn-2" name="btnName">КНОПКА 3</button>
+        
+            <button id="element">УНИКАЛЬНАЯ КНОПКА</button>
+        
+        
+        </div>
+
+        <form id="form" action="">
+            <label for="">
+                <input type="radio" name="var" value="1">
+                <span>Да</span>
+            </label>
+            <label for="">
+                <input type="radio" name="var" value="2">
+                <span>Нет</span>
+            </label>
+
+            <button type="submit">ОТПРАВИТЬ</button>
+        </form>
+
+        <div id="block" style="width: 500px; height: 200px; background-color: gray;">
+            ОБЫЧНЫЙ БЛОК
+        </div>
     </body>
-    <script type="module" src="../index.js"></script>
-    <script type="module">
-        import setCounter from '../index.js';
-        setCounter();
-    </script>
+    
+    
 </html>
