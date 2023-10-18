@@ -1,4 +1,3 @@
-
 const fs = require('fs').promises;
 const path = require('path');
 
@@ -36,5 +35,5 @@ const reverseContent = (filepath) => {
     // Конец
 };
 
-reverseContent(getPath('/one.txt'));
-// export default reverseContent;
+// reverseContent(getPath('/one.txt'));
+export default reverseContent;
