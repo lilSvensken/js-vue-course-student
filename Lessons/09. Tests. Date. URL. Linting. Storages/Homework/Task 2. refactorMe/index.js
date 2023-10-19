@@ -1,3 +1,4 @@
+
 const getTextFromUrl = (url) => {
     // Начало
     const o = new URL(url);
