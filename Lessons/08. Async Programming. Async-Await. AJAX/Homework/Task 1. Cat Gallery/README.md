@@ -27,7 +27,7 @@
 ```
 setCatGallery().then((text) => {
     console.log(text); // cat gallery is ready!
-}
+})
 ```
 
 После использования функции `DOM` должен иметь следующую структуру:
