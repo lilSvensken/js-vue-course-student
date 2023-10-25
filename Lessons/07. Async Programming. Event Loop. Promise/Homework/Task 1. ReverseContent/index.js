@@ -10,10 +10,6 @@ const reverseContent = (filepath) => {
             return fs.writeFile(filepath, reversedData);
         })
 
-        .then(() => {
-            console.log(`Успешно`);
-        })
-
         .catch((error) => {
             console.error(`Ошибка`);
         });
