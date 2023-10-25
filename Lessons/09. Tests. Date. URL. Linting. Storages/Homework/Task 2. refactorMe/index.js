@@ -1,19 +1,24 @@
 const getTextFromUrl = (url) => {
-    // Начало
-    const o = new URL(url);
-    var par = o.searchParams;
-    var str = par.toString();
-    let rep_text = str.replaceAll('text=', ' ');
-    let rep_c = rep_text.replaceAll('coma', ',');
-    let rep_d = rep_c.replaceAll('dot', '.');
-    let space = rep_d.replaceAll('space', ' ');
-    let sc = space.replaceAll('semicolon', ';');
-    var apth = sc.replaceAll('apostrophe', "'");
-    var ampRepl = apth.replaceAll('&', '');
-    var ravno = ampRepl.replaceAll('=', '');
-    var deleteProbel = ravno.replaceAll("' ", "'");
-    return deleteProbel;
-    // Конец
-};
+    const textReplacements = {
+        'text': ' ',
+        'coma': ',',
+        'dot': '.',
+        'space': ' ',
+        'semicolon': ';',
+        'apostrophe': "'",
+        '&': '',
+        '=': '',
+    };
 
+    const decodeText = (text) => {
+        for (const [key, value] of Object.entries(textReplacements)) {
+            text = text.replaceAll(key, value);
+        }
+        return text;
+    };
+
+    return decodeText(new URL(url).searchParams.toString());
+};
 export default getTextFromUrl;
+
+
