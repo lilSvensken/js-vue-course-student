@@ -8,9 +8,11 @@ const getPath = (fileName) => path.join(__dirname, './__fixtures__', fileName);
 // const currentPath = getPath('/one.txt');
 
 
-const reverseContent = (filepath) => {
+const reverseContent = async (filepath) => {
     // Начало
-
+    const content = await fs.readFile(filepath, 'utf-8');
+    const reversedContent = content.split('\n').reverse().join('\n');
+    await fs.writeFile(filepath, reversedContent);
     // Конец
 };
 

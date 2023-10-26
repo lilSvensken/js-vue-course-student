@@ -1,4 +1,4 @@
-const setToDo = () => {
+    const setToDo = () => {
     // Начало
     const main = document.querySelector('.to-do');
     const tasks = document.querySelector('.to-do__tasks');
