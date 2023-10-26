@@ -9,9 +9,24 @@ const getPath = (fileName) => path.join(__dirname, './__fixtures__', fileName);
 
 
 const reverseContent = (filepath) => {
-    // Начало
+    let  s = '';
+    const promise = fs
+    .readFile(filepath, 'utf-8')
+        .then((data1) => {
+            let temp = data1.split('\n')
+            for (let i = temp.length-1; i>=0; i--){
+                if (i !== 0) {
+                    s = s + temp[i] + '\n';
+                }else {
+                    s = s + temp[i];
+                }
+            }
 
-    // Конец
+        })
+        .then(() => {const fs = require('fs');
+            fs.writeFileSync(filepath, s);
+        });
+    return promise;
 };
 
 export default reverseContent;
