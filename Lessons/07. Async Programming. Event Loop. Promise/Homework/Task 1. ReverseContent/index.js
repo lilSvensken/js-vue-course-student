@@ -10,7 +10,16 @@ const getPath = (fileName) => path.join(__dirname, './__fixtures__', fileName);
 
 const reverseContent = (filepath) => {
     // Начало
-
+    return new Promise((resolve) => {
+        fs.readFile(filepath, 'utf-8')
+            .then((data) => {
+                const reversedContent = data.split('\n').reverse().join('\n');
+                return fs.writeFile(filepath, reversedContent);
+            })
+            .then(() => {
+                resolve(filepath);
+            })
+    });
     // Конец
 };
 
