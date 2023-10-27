@@ -18,7 +18,7 @@ function setToDo() {
                 this.remove();
             });
             tasksDiv.appendChild(taskSpan);
-            input.value = '';
+            input.value = ''; 
         }
     });
 

@@ -16,7 +16,7 @@ const ADDITIONAL_BUTTONS = [
     },
     {
         text: 'Сбросить',
-        type: TYPES.RESET,
+        type: TYPES.RESET, 
     },
 ];
 
