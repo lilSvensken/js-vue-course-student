@@ -1,14 +1,21 @@
-body{
+body {
     padding: 40px;
 }
+
 .tic-tac-toe {
     border: 2px solid #B0B0B0;
     width: fit-content;
 }
-.tic-tac-toe__line{
+
+.tic-tac-toe__row {
     display: flex;
     align-items: center;
 }
+
+.tic-tac-toe__row:not(:last-of-type) {
+    border-bottom: 2px solid #B0B0B0;
+}
+
 .tic-tac-toe__item {
     width: 40px;
     height: 40px;
@@ -16,7 +23,6 @@ body{
     align-items: center;
     justify-content: center;
 }
-
 
 .tic-tac-toe__item img {
     width: 24px;
