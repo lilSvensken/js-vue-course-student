@@ -68,4 +68,4 @@ const setTrafficLight = () => {
     // Конец
 };
 
-export default setTrafficLight;
+
