@@ -1,13 +1,12 @@
 const setToDo = () => {
     // Начало
     const main = document.querySelector('.to-do__main');
-    const tasksContainer = document.querySelector('.to-do__tasks');
+    const tasks = document.querySelector('.to-do__tasks');
 
     const input = document.createElement('input');
     input.classList.add('form-control', 'form-control-lg');
     input.type = 'text';
     input.placeholder = 'Введите наименование задачи';
-    main.append(input);
 
     const planBtn = document.createElement('button');
     planBtn.classList.add('btn', 'btn-danger');
@@ -17,24 +16,25 @@ const setToDo = () => {
     completeBtn.classList.add('btn', 'btn-success');
     completeBtn.textContent = 'Добавить в сделанные';
 
-    var addListener = (element, type) => {
+    const addListener = (element, type) => {
         element.addEventListener('click', () => {
-            const taskElement = document.createElement('span');
+            const task = document.createElement('span');
             const taskText = input.value;
-            taskElement.dataset.type = type;
-            taskElement.textContent = taskText;
-            taskElement.addEventListener('click', () => {
-                taskElement.remove();
+            task.dataset.type = type;
+            task.textContent = taskText;
+            task.addEventListener('click', () => {
+                task.remove();
             });
 
             input.value = '';
-            tasksContainer.append(taskElement);
+            tasks.append(task);
         });
     };
 
     addListener(planBtn, 'planned');
     addListener(completeBtn, 'completed');
 
+    main.append(input);
     main.append(planBtn);
     main.append(completeBtn);
     // Конец
