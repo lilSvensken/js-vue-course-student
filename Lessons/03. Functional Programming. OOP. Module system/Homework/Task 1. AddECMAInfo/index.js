@@ -1,14 +1,17 @@
 const javaScriptData = {
-    name: 'JS',
-    multiThread: false,
-    born: 1995,
-    cool: true,
+  name: "JS",
+  multiThread: false,
+  born: 1995,
+  cool: true,
 };
 
-const addECMAInfo = () => {
-    // Начало
+const addECMAInfo = (javaScriptData) => {
+  // Начало
 
-    // Конец
+  let newJavaScriptData = { ...javaScriptData, currentECMA: 2023 }
+  return newJavaScriptData;
+
+  // Конец
 };
 
 export default addECMAInfo;
