@@ -4,11 +4,29 @@
 // Выполните задание, отслеживая изменения в браузере,
 // после чего раскомментируйте строку с импортом для прохождения тестов
 
-// import axios from 'axios';
+import axios from 'axios';
+
+const BASE_URL = "https://api.thecatapi.com/v1/images/search"
 
 const setCatGallery = () => {
     // Начало
-
+    const mainContainer = document.querySelector(".main__container");
+    let catsPictures = [];
+    for (let i = 0; i < 10; i++) {
+        catsPictures[i] = axios.get(BASE_URL)
+    }
+    return Promise.all(catsPictures)
+        .then((data) => {
+            data.forEach((object) => {
+                const img = document.createElement("img");
+                img.src = object.data[0].url;
+                mainContainer.append(img);
+            });
+            return "cat gallery is ready!";
+        })
+        .catch((err) => {
+            console.error(err);
+        });
     // Конец
 };
 
