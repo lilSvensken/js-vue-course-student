@@ -1,19 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Title</title>
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="./index.css"
-        >
-    </head>
-    <body>
-        <div class="resume">
-            <!-- Начало -->
-            Здесь могло бы быть Ваше резюме...
-            <!-- Конец -->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Мое резюме</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <header>
+        <h1 class="resume__name">Вакатов Илья</h1>
+        <div class="resume__contact">
+            <p class="resume__contact-info">Телефон: +7 123 456 7890</p>
+            <p class="resume__contact-info">Email: ilya@example.com</p>
         </div>
-    </body>
+        <img class="resume__photo" src="vod.jpg" alt="Фото Ильи Вакатова">
+    </header>
+
+    <main>
+        <section class="resume__section">
+            <h2 class="resume__section-title">Общая информация</h2>
+            <p class="resume__text">Дата рождения: 1 января 2004</p>
+            <p class="resume__text">Место проживания: Россия, Казань</p>
+        </section>
+
+        <section class="resume__section">
+            <h2 class="resume__section-title">О себе</h2>
+            <p class="resume__text">Россия - священная наша держава,
+                Россия - любимая наша страна.
+                Могучая воля, великая слава -
+                Твое достоянье на все времена!
+                Славься, Отечество наше свободное,
+                Братских народов союз вековой,
+                Предками данная мудрость народная!
+                Славься, страна! Мы гордимся тобой!
+                От южных морей до полярного края
+                Раскинулись наши леса и поля.
+                Одна ты на свете! Одна ты такая -
+                Хранимая Богом родная земля!
+                Славься, Отечество наше свободное,
+                Братских народов союз вековой,
+                Предками данная мудрость народная!
+                Славься, страна! Мы гордимся тобой!
+                Широкий простор для мечты и для жизни
+                Грядущие нам открывают года.
+                Нам силу дает наша верность Отчизне.
+                Так было, так есть и так будет всегда!
+                Славься, Отечество наше свободное,
+                Братских народов союз вековой,
+                Предками данная мудрость народная!
+                Славься, страна! Мы гордимся тобой!</p>
+        </section>
+
+        <section class="resume__section">
+            <h2 class="resume__section-title">Навыки</h2>
+            <ul class="resume__skill-list">
+                <li class="resume__skill">HTML/CSS</li>
+                <li class="resume__skill">JavaScript</li>
+                <li class="resume__skill">Python</li>
+                <li class="resume__skill">Web Design</li>
+            </ul>
+        </section>
+
+        <section class="resume__section">
+            <h2 class="resume__section-title">Уровень английского</h2>
+            <p class="resume__text">Продвинутый</p>
+        </section>
+
+        <section class="resume__section">
+            <h2 class="resume__section-title">Образование</h2>
+            <p class="resume__text">Высшее образование: КФУ ИТИС, 2026</p>
+        </section>
+    </main>
+
+    <footer>
+        <h3 class="resume__footer-title">Дополнительные контакты</h3>
+        <p class="resume__footer-info">LinkedIn: <a href="https://www.linkedin.com/in/ivanivanov">VakatovIlya</a></p>
+        <p class="resume__footer-info">GitHub: <a href="https://github.com/ivan">Ilya</a></p>
+    </footer>
+</body>
 </html>
