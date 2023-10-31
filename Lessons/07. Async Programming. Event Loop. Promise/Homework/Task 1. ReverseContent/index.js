@@ -9,9 +9,8 @@ const getPath = (fileName) => path.join(__dirname, './__fixtures__', fileName);
 
 
 const reverseContent = (filepath) => {
-    // Начало
-
-    // Конец
+    const promise = fs.readFile(filepath)
+    .then((data) => console.log(data));
 };
 
 export default reverseContent;

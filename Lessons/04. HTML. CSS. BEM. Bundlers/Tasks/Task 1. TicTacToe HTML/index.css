@@ -1,3 +1,12 @@
-.tic-tac-toe {
-
+table{
+  border-spacing: 0px;
+  border-collapse: collapse;
 }
+img{
+  margin: 3px;
+}
+table,
+td {
+  border: 2px solid #333;
+}
+

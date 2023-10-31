@@ -19,6 +19,8 @@
     <script type="module" src="../index.js"></script>
     <script type="module">
         import setCatGallery from '../index.js';
-        setCatGallery();
+        setCatGallery().then((text) => {
+            console.log(text); // cat gallery is ready!
+        });
     </script>
 </html>
