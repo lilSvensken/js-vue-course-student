@@ -1,7 +1,13 @@
 class CarBrand {
-    // Начало
+    constructor(model, power, accelerationTime){
+        this.model = model,
+        this.power = power,
+        this.accelerationTime = accelerationTime
+    }
 
-    // Конец
+    runDrag(time){
+        return `${this.model} runs drag for ${time} seconds`
+    }
 }
 
 export default CarBrand;
