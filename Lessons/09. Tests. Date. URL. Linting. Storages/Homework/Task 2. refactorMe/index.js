@@ -1,19 +1,23 @@
 const getTextFromUrl = (url) => {
-    // Начало
-    const o = new URL(url);
-    var par = o.searchParams;
-    var str = par.toString();
-    let rep_text = str.replaceAll('text=', ' ');
-    let rep_c = rep_text.replaceAll('coma', ',');
-    let rep_d = rep_c.replaceAll('dot', '.');
-    let space = rep_d.replaceAll('space', ' ');
-    let sc = space.replaceAll('semicolon', ';');
-    var apth = sc.replaceAll('apostrophe', "'");
-    var ampRepl = apth.replaceAll('&', '');
-    var ravno = ampRepl.replaceAll('=', '');
-    var deleteProbel = ravno.replaceAll("' ", "'");
-    return deleteProbel;
-    // Конец
+    const replacements = [
+        { key: 'text=', value: ' ' },
+        { key: 'coma', value: ',' },
+        { key: 'dot', value: '.' },
+        { key: 'space', value: ' ' },
+        { key: 'semicolon', value: ';' },
+        { key: 'apostrophe', value: "'" },
+        { key: '&', value: '' },
+        { key: '=', value: '' },
+        { key: "' ", value: "'" }
+    ];
+    const SongUrl = new URL(url);
+    const searchParams = SongUrl.searchParams;
+    let lyrics = searchParams.toString();
+    replacements.forEach(({ key, value }) => {
+        lyrics = lyrics.replaceAll(key, value);
+    });
+
+    return lyrics;
 };
 
 export default getTextFromUrl;
