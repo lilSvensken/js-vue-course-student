@@ -1,30 +1,34 @@
-const userColor = document.getElementById("promise")
+const selectRef = document.getElementById('select');
 const loadRef = document.getElementById("load")
 setDefaultColor();
 onListener();
 
-function onListener() {
-    const promise = new Promise((resolve, reject) => {
-        userColor.addEventListener("change", () => {
-            const selectOption = userColor.value;
-            localStorage.setItem("COLOR_LS", selectOption)
-
-            if (selectOption === 'red') {
-                reject("Ошибка, красный")
-            } else if (selectOption === 'green') {
-                resolve("Ок,зеленый")
-            }
-        })
-    })
+function onListener () {
+  const promise = new Promise((resolve, reject) => {
+    selectRef.addEventListener('change', () => {
+        const value = selectRef.value;
+        localStorage.setItem("COLOR_LS", value);
+        
+        if (value === 'red') {
+          reject("Ошибка, красный")
+        } else if (value === 'green') {
+          resolve("Ок, зеленый")
+        }
+      }
+    )
+  })
+  
+  promise
+    .then((data) => console.log(data))
+    .catch((err) => console.log(err))
+    .finally(() => onListener())
 }
-promise
-.then((text)=>console.log(text))
-.catch((err)=>console.log(err))
-.finally(()=>onListener())
-function setDefaultColor(){
-    userColor.value  = localStorage.getItem("COLOR_LS")
 
-    setTimeout()
-    loadRef.classList.add("hide")
-    userColor.remove("hide");
+function setDefaultColor () {
+  selectRef.value = localStorage.getItem("COLOR_LS");
+  
+  setTimeout(() => {
+    loadRef.classList.add("hide");
+    selectRef.classList.remove("hide");
+  }, 2000)
 }
