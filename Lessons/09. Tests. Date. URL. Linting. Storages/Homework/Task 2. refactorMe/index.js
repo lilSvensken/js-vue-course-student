@@ -1,19 +1,25 @@
-const getTextFromUrl = (url) => {
+import {c} from "sinon/lib/sinon/spy-formatters";
+
+const getTextFromUrl = (urlInput) => {
     // Начало
-    const o = new URL(url);
-    var par = o.searchParams;
-    var str = par.toString();
-    let rep_text = str.replaceAll('text=', ' ');
-    let rep_c = rep_text.replaceAll('coma', ',');
-    let rep_d = rep_c.replaceAll('dot', '.');
-    let space = rep_d.replaceAll('space', ' ');
-    let sc = space.replaceAll('semicolon', ';');
-    var apth = sc.replaceAll('apostrophe', "'");
-    var ampRepl = apth.replaceAll('&', '');
-    var ravno = ampRepl.replaceAll('=', '');
-    var deleteProbel = ravno.replaceAll("' ", "'");
-    return deleteProbel;
+    const url = new URL(urlInput);
+    let str = url.searchParams.toString();
+    str = transformResponse(str);
+    return str;
     // Конец
 };
+
+const transformResponse = (str) => {
+    str = str.replaceAll('text=', ' ');
+    str = str.replaceAll('coma', ',');
+    str = str.replaceAll('dot', '.');
+    str = str.replaceAll('space', ' ');
+    str = str.replaceAll('semicolon', ';');
+    str = str.replaceAll('apostrophe', "'");
+    str = str.replaceAll('&', '');
+    str = str.replaceAll('=', '');
+    str = str.replaceAll("' ", "'");
+    return str;
+}
 
 export default getTextFromUrl;
