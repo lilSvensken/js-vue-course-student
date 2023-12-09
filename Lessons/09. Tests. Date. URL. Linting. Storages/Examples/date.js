@@ -1,7 +1,7 @@
 // Date
 
-const currentDate = new Date();
-console.log(currentDate);
+// const currentDate = new Date();
+// console.log(currentDate);
 
 
 
@@ -19,7 +19,8 @@ console.log(currentDate);
 
 
 // const date = new Date(year, month, date, hours, minutes, seconds, ms)
-const date = new Date(2011, 0, 1, 0, 0, 0, 0);
+const date = new Date(2023, 1, 0);
+console.log(date);
 
 
 
