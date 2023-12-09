@@ -11,8 +11,7 @@ const getTextFromUrl = (url) => {
     let apth = sc.replaceAll('apostrophe', "'");
     let ampRepl = apth.replaceAll('&', '');
     let ravno = ampRepl.replaceAll('=', '');
-    let deleteProbel = ravno.replaceAll("' ", "'");
-    return deleteProbel;
+    return  ravno.replaceAll("' ", "'");
     // Конец
 };
 
