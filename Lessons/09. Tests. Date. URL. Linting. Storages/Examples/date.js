@@ -19,8 +19,8 @@ console.log(currentDate);
 
 
 // const date = new Date(year, month, date, hours, minutes, seconds, ms)
-const date = new Date(2023, 1, 0);
-console.log(date);
+// const date = new Date(2023, 1, 0);
+// console.log(date);
 
 
 
