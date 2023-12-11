@@ -1,18 +1,25 @@
 const setCounter = () => {
     // Начало
-    const countText = 'Количество нажатий: ';
-    const counter = document.querySelector('.main');
+    const mainElement = document.querySelector(".main");
     const button = document.createElement('button');
-    button.classList.add('btn', 'btn-warning');
-    button.textContent = countText + '0';
+    button.textContent = "Количество нажатий 0"
+    mainElement.appendChild(button);
+
+
+    let counter = 0;
+
+    function handleClick() {
+        counter++;
+        button.textContent = `Кол-во нажатии: ${counter}`;
+
+        if (counter === 3) {
+            button.className = "btn btn-warning"; 
+        }
     
-    button.addEventListener('click', (event) => {
-        const currentCount = event.target.textContent.split(': ')[1];
-        const newCount = Number(currentCount) + 1;
-        event.target.textContent = countText + newCount;
-    });
+    }
+
     
-    counter.append(button);
+    button.addEventListener('click', handleClick);
     // Конец
 };
 

@@ -12,7 +12,7 @@
 
         <!-- <button v-if="isActiveBtn">Send</button> -->
         <button class="btn" :class="{hide: !isActiveBtn}">Send</button>
-        
+
         <ul>
             <li v-for="(userItem, index) in users" :key="userItem.id">
                 {{ index + 1 }}: {{ userItem.name }}
@@ -21,72 +21,70 @@
     </div>
 </template>
 
-
 <script>
 const ARR_DATA = [
-    {
-        id: 1,
-        name: 'long'
-    }, 
-    {
-        id: 2,
-        name: 'Masha'
-    }, 
-    {
-        id: 3,
-        name: 'Smith'
-    }
+  {
+    id: 1,
+    name: 'long'
+  },
+  {
+    id: 2,
+    name: 'Masha'
+  },
+  {
+    id: 3,
+    name: 'Smith'
+  }
 ]
 
-
 export default {
-    name: 'TestComponent', 
-    data() {
-        return {
-            count: 0,
-            href: 'https://google.com',
-            isActiveBtn: false,
-            users: ARR_DATA
-        }
+  name: 'TestComponent',
+  data () {
+    return {
+      count: 0,
+      href: 'https://google.com',
+      isActiveBtn: false,
+      users: ARR_DATA
+    }
+  },
+
+  mounted () {
+    // setInterval (() => {
+    //     this.count++
+    // }, 1000)
+  },
+
+  methods: {
+    onClickContainer (event, int) {
+      this.count++
     },
 
-    mounted() {
-        // setInterval (() => {
-        //     this.count++
-        // }, 1000)
-    }, 
+    onClickLink (event) {
+      console.log('click')
+    },
 
-    methods: {
-        onClickContainer(event, int) {
-            this.count++
-        }, 
+    onKeyDown (event) {
+      console.log(event.key)
+    },
 
-        onClickLink(event) {
-        console.log('click')
-        }, 
+    changeInputValue (event) {
+      const value = event.target.value
 
-        onKeyDown(event) {
-            console.log(event.key)
-        },
+      this.isActiveBtn = !!value
 
-        changeInputValue(event) {
-            const value = event.target.value
-
-            this.isActiveBtn = !!value
-
-            // if (value) {
-            //     this.isActiveBtn = true
-            // } else {
-            //     this.isActiveBtn = false
-            // }
-        }
-    }, 
-
-    computed: {
-        getResult() {
-            return this.count+ 10
-        }
+      // if (value) {
+      //     this.isActiveBtn = true
+      // } else {
+      //     this.isActiveBtn = false
+      // }
     }
+  },
+
+  computed: {
+    getResult () {
+      return this.count + 10
+    }
+  }
 }
 </script>
 

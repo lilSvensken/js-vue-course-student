@@ -1,20 +1,16 @@
 <template>
-  <main>
-    <TestComponent />
-  </main>
+  <router-view />
 </template>
 
-
 <script>
-import TestComponent from './components/Test.vue'
-
 export default {
   name: 'App',
-  components: {
-    TestComponent
+  data() {
+    return {
+      count: 0,
+    }
   }
 }
 </script>
 
 <style></style>
-  
