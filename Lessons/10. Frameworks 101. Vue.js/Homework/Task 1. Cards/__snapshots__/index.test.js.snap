@@ -18,25 +18,19 @@ exports[` 1`] = `
       <h5
         class="card-title"
       >
-        
         Iphone X 64GB
-      
       </h5>
        
       <h4
         class="card-title"
       >
-        
         800$
-      
       </h4>
        
       <p
         class="card-text"
       >
-        
         Packed with Innovative Features Including a Super Retina Display, TrueDepth Camera System, Face ID and A11 Bionic Chip with Neural Engine
-      
       </p>
        
       <div
@@ -45,17 +39,13 @@ exports[` 1`] = `
         <button
           class="btn btn-primary button-plus"
         >
-          
           +
-        
         </button>
          
         <button
           class="btn btn-primary button-minus"
         >
-          
           -
-        
         </button>
          
         <div>
@@ -80,25 +70,19 @@ exports[` 1`] = `
       <h5
         class="card-title"
       >
-        
         Samsung Galaxy S21 128GB
-      
       </h5>
        
       <h4
         class="card-title"
       >
-        
         1000$
-      
       </h4>
        
       <p
         class="card-text"
       >
-        
         Introducing Galaxy S21 Ultra 5G. Designed with a unique contour-cut camera to create a revolution in photography — letting you capture cinematic 8K video and snap epic stills, all in one go.
-      
       </p>
        
       <div
@@ -107,17 +91,13 @@ exports[` 1`] = `
         <button
           class="btn btn-primary button-plus"
         >
-          
           +
-        
         </button>
          
         <button
           class="btn btn-primary button-minus"
         >
-          
           -
-        
         </button>
          
         <div>
@@ -142,25 +122,19 @@ exports[` 1`] = `
       <h5
         class="card-title"
       >
-        
         Nokia 2600
-      
       </h5>
        
       <h4
         class="card-title"
       >
-        
         Priceless
-      
       </h4>
        
       <p
         class="card-text"
       >
-        
         Give me back my 2007
-      
       </p>
        
       <div
@@ -169,17 +143,13 @@ exports[` 1`] = `
         <button
           class="btn btn-primary button-plus"
         >
-          
           +
-        
         </button>
          
         <button
           class="btn btn-primary button-minus"
         >
-          
           -
-        
         </button>
          
         <div>
@@ -211,25 +181,19 @@ exports[`10.h.1 Cards 10.h.1.3 first card plus button click 1`] = `
       <h5
         class="card-title"
       >
-        
         Iphone X 64GB
-      
       </h5>
        
       <h4
         class="card-title"
       >
-        
         800$
-      
       </h4>
        
       <p
         class="card-text"
       >
-        
         Packed with Innovative Features Including a Super Retina Display, TrueDepth Camera System, Face ID and A11 Bionic Chip with Neural Engine
-      
       </p>
        
       <div
@@ -238,17 +202,13 @@ exports[`10.h.1 Cards 10.h.1.3 first card plus button click 1`] = `
         <button
           class="btn btn-primary button-plus"
         >
-          
           +
-        
         </button>
          
         <button
           class="btn btn-primary button-minus"
         >
-          
           -
-        
         </button>
          
         <div>
@@ -273,25 +233,19 @@ exports[`10.h.1 Cards 10.h.1.3 first card plus button click 1`] = `
       <h5
         class="card-title"
       >
-        
         Samsung Galaxy S21 128GB
-      
       </h5>
        
       <h4
         class="card-title"
       >
-        
         1000$
-      
       </h4>
        
       <p
         class="card-text"
       >
-        
         Introducing Galaxy S21 Ultra 5G. Designed with a unique contour-cut camera to create a revolution in photography — letting you capture cinematic 8K video and snap epic stills, all in one go.
-      
       </p>
        
       <div
@@ -300,17 +254,13 @@ exports[`10.h.1 Cards 10.h.1.3 first card plus button click 1`] = `
         <button
           class="btn btn-primary button-plus"
         >
-          
           +
-        
         </button>
          
         <button
           class="btn btn-primary button-minus"
         >
-          
           -
-        
         </button>
          
         <div>
@@ -335,25 +285,19 @@ exports[`10.h.1 Cards 10.h.1.3 first card plus button click 1`] = `
       <h5
         class="card-title"
       >
-        
         Nokia 2600
-      
       </h5>
        
       <h4
         class="card-title"
       >
-        
         Priceless
-      
       </h4>
        
       <p
         class="card-text"
       >
-        
         Give me back my 2007
-      
       </p>
        
       <div
@@ -362,17 +306,13 @@ exports[`10.h.1 Cards 10.h.1.3 first card plus button click 1`] = `
         <button
           class="btn btn-primary button-plus"
         >
-          
           +
-        
         </button>
          
         <button
           class="btn btn-primary button-minus"
         >
-          
           -
-        
         </button>
          
         <div>
@@ -404,25 +344,19 @@ exports[`10.h.1 Cards 10.h.1.4 second card minus button click 1`] = `
       <h5
         class="card-title"
       >
-        
         Iphone X 64GB
-      
       </h5>
        
       <h4
         class="card-title"
       >
-        
         800$
-      
       </h4>
        
       <p
         class="card-text"
       >
-        
         Packed with Innovative Features Including a Super Retina Display, TrueDepth Camera System, Face ID and A11 Bionic Chip with Neural Engine
-      
       </p>
        
       <div
@@ -431,17 +365,13 @@ exports[`10.h.1 Cards 10.h.1.4 second card minus button click 1`] = `
         <button
           class="btn btn-primary button-plus"
         >
-          
           +
-        
         </button>
          
         <button
           class="btn btn-primary button-minus"
         >
-          
           -
-        
         </button>
          
         <div>
@@ -466,25 +396,19 @@ exports[`10.h.1 Cards 10.h.1.4 second card minus button click 1`] = `
       <h5
         class="card-title"
       >
-        
         Samsung Galaxy S21 128GB
-      
       </h5>
        
       <h4
         class="card-title"
       >
-        
         1000$
-      
       </h4>
        
       <p
         class="card-text"
       >
-        
         Introducing Galaxy S21 Ultra 5G. Designed with a unique contour-cut camera to create a revolution in photography — letting you capture cinematic 8K video and snap epic stills, all in one go.
-      
       </p>
        
       <div
@@ -493,17 +417,13 @@ exports[`10.h.1 Cards 10.h.1.4 second card minus button click 1`] = `
         <button
           class="btn btn-primary button-plus"
         >
-          
           +
-        
         </button>
          
         <button
           class="btn btn-primary button-minus"
         >
-          
           -
-        
         </button>
          
         <div>
@@ -528,25 +448,19 @@ exports[`10.h.1 Cards 10.h.1.4 second card minus button click 1`] = `
       <h5
         class="card-title"
       >
-        
         Nokia 2600
-      
       </h5>
        
       <h4
         class="card-title"
       >
-        
         Priceless
-      
       </h4>
        
       <p
         class="card-text"
       >
-        
         Give me back my 2007
-      
       </p>
        
       <div
@@ -555,17 +469,13 @@ exports[`10.h.1 Cards 10.h.1.4 second card minus button click 1`] = `
         <button
           class="btn btn-primary button-plus"
         >
-          
           +
-        
         </button>
          
         <button
           class="btn btn-primary button-minus"
         >
-          
           -
-        
         </button>
          
         <div>
@@ -597,25 +507,19 @@ exports[`10.h.1 Cards 10.h.1.5 third card plus button two clicks 1`] = `
       <h5
         class="card-title"
       >
-        
         Iphone X 64GB
-      
       </h5>
        
       <h4
         class="card-title"
       >
-        
         800$
-      
       </h4>
        
       <p
         class="card-text"
       >
-        
         Packed with Innovative Features Including a Super Retina Display, TrueDepth Camera System, Face ID and A11 Bionic Chip with Neural Engine
-      
       </p>
        
       <div
@@ -624,17 +528,13 @@ exports[`10.h.1 Cards 10.h.1.5 third card plus button two clicks 1`] = `
         <button
           class="btn btn-primary button-plus"
         >
-          
           +
-        
         </button>
          
         <button
           class="btn btn-primary button-minus"
         >
-          
           -
-        
         </button>
          
         <div>
@@ -659,25 +559,19 @@ exports[`10.h.1 Cards 10.h.1.5 third card plus button two clicks 1`] = `
       <h5
         class="card-title"
       >
-        
         Samsung Galaxy S21 128GB
-      
       </h5>
        
       <h4
         class="card-title"
       >
-        
         1000$
-      
       </h4>
        
       <p
         class="card-text"
       >
-        
         Introducing Galaxy S21 Ultra 5G. Designed with a unique contour-cut camera to create a revolution in photography — letting you capture cinematic 8K video and snap epic stills, all in one go.
-      
       </p>
        
       <div
@@ -686,17 +580,13 @@ exports[`10.h.1 Cards 10.h.1.5 third card plus button two clicks 1`] = `
         <button
           class="btn btn-primary button-plus"
         >
-          
           +
-        
         </button>
          
         <button
           class="btn btn-primary button-minus"
         >
-          
           -
-        
         </button>
          
         <div>
@@ -721,25 +611,19 @@ exports[`10.h.1 Cards 10.h.1.5 third card plus button two clicks 1`] = `
       <h5
         class="card-title"
       >
-        
         Nokia 2600
-      
       </h5>
        
       <h4
         class="card-title"
       >
-        
         Priceless
-      
       </h4>
        
       <p
         class="card-text"
       >
-        
         Give me back my 2007
-      
       </p>
        
       <div
@@ -748,31 +632,21 @@ exports[`10.h.1 Cards 10.h.1.5 third card plus button two clicks 1`] = `
         <button
           class="btn btn-primary button-plus"
         >
-          
           +
-        
         </button>
          
         <button
           class="btn btn-primary button-minus"
         >
-          
           -
-        
         </button>
          
         <div>
-          2 шт.
+          1 шт.
         </div>
       </div>
        
-      <div
-        class="card__alert alert alert-danger"
-      >
-        
-        Данного товара доступно только 1 шт.
-      
-      </div>
+      <!---->
     </div>
   </div>
 </div>
@@ -796,25 +670,19 @@ exports[`10.h.1 Cards 10.h.1.6 third card minus button click 1`] = `
       <h5
         class="card-title"
       >
-        
         Iphone X 64GB
-      
       </h5>
        
       <h4
         class="card-title"
       >
-        
         800$
-      
       </h4>
        
       <p
         class="card-text"
       >
-        
         Packed with Innovative Features Including a Super Retina Display, TrueDepth Camera System, Face ID and A11 Bionic Chip with Neural Engine
-      
       </p>
        
       <div
@@ -823,17 +691,13 @@ exports[`10.h.1 Cards 10.h.1.6 third card minus button click 1`] = `
         <button
           class="btn btn-primary button-plus"
         >
-          
           +
-        
         </button>
          
         <button
           class="btn btn-primary button-minus"
         >
-          
           -
-        
         </button>
          
         <div>
@@ -858,25 +722,19 @@ exports[`10.h.1 Cards 10.h.1.6 third card minus button click 1`] = `
       <h5
         class="card-title"
       >
-        
         Samsung Galaxy S21 128GB
-      
       </h5>
        
       <h4
         class="card-title"
       >
-        
         1000$
-      
       </h4>
        
       <p
         class="card-text"
       >
-        
         Introducing Galaxy S21 Ultra 5G. Designed with a unique contour-cut camera to create a revolution in photography — letting you capture cinematic 8K video and snap epic stills, all in one go.
-      
       </p>
        
       <div
@@ -885,17 +743,13 @@ exports[`10.h.1 Cards 10.h.1.6 third card minus button click 1`] = `
         <button
           class="btn btn-primary button-plus"
         >
-          
           +
-        
         </button>
          
         <button
           class="btn btn-primary button-minus"
         >
-          
           -
-        
         </button>
          
         <div>
@@ -920,25 +774,19 @@ exports[`10.h.1 Cards 10.h.1.6 third card minus button click 1`] = `
       <h5
         class="card-title"
       >
-        
         Nokia 2600
-      
       </h5>
        
       <h4
         class="card-title"
       >
-        
         Priceless
-      
       </h4>
        
       <p
         class="card-text"
       >
-        
         Give me back my 2007
-      
       </p>
        
       <div
@@ -947,21 +795,17 @@ exports[`10.h.1 Cards 10.h.1.6 third card minus button click 1`] = `
         <button
           class="btn btn-primary button-plus"
         >
-          
           +
-        
         </button>
          
         <button
           class="btn btn-primary button-minus"
         >
-          
           -
-        
         </button>
          
         <div>
-          1 шт.
+          0 шт.
         </div>
       </div>
        
@@ -989,25 +833,19 @@ exports[`10.h.1 Cards 10.h.1.7 third card minus button two more clicks 1`] = `
       <h5
         class="card-title"
       >
-        
         Iphone X 64GB
-      
       </h5>
        
       <h4
         class="card-title"
       >
-        
         800$
-      
       </h4>
        
       <p
         class="card-text"
       >
-        
         Packed with Innovative Features Including a Super Retina Display, TrueDepth Camera System, Face ID and A11 Bionic Chip with Neural Engine
-      
       </p>
        
       <div
@@ -1016,17 +854,13 @@ exports[`10.h.1 Cards 10.h.1.7 third card minus button two more clicks 1`] = `
         <button
           class="btn btn-primary button-plus"
         >
-          
           +
-        
         </button>
          
         <button
           class="btn btn-primary button-minus"
         >
-          
           -
-        
         </button>
          
         <div>
@@ -1051,25 +885,19 @@ exports[`10.h.1 Cards 10.h.1.7 third card minus button two more clicks 1`] = `
       <h5
         class="card-title"
       >
-        
         Samsung Galaxy S21 128GB
-      
       </h5>
        
       <h4
         class="card-title"
       >
-        
         1000$
-      
       </h4>
        
       <p
         class="card-text"
       >
-        
         Introducing Galaxy S21 Ultra 5G. Designed with a unique contour-cut camera to create a revolution in photography — letting you capture cinematic 8K video and snap epic stills, all in one go.
-      
       </p>
        
       <div
@@ -1078,17 +906,13 @@ exports[`10.h.1 Cards 10.h.1.7 third card minus button two more clicks 1`] = `
         <button
           class="btn btn-primary button-plus"
         >
-          
           +
-        
         </button>
          
         <button
           class="btn btn-primary button-minus"
         >
-          
           -
-        
         </button>
          
         <div>
@@ -1113,25 +937,19 @@ exports[`10.h.1 Cards 10.h.1.7 third card minus button two more clicks 1`] = `
       <h5
         class="card-title"
       >
-        
         Nokia 2600
-      
       </h5>
        
       <h4
         class="card-title"
       >
-        
         Priceless
-      
       </h4>
        
       <p
         class="card-text"
       >
-        
         Give me back my 2007
-      
       </p>
        
       <div
@@ -1140,17 +958,13 @@ exports[`10.h.1 Cards 10.h.1.7 third card minus button two more clicks 1`] = `
         <button
           class="btn btn-primary button-plus"
         >
-          
           +
-        
         </button>
          
         <button
           class="btn btn-primary button-minus"
         >
-          
           -
-        
         </button>
          
         <div>

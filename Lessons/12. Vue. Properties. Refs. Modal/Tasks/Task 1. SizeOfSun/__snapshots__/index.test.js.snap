@@ -13,37 +13,12 @@ exports[` 1`] = `
      
     <div
       class="sun-container__img"
-    >
-      <img
-        class="sun-container__the-sun"
-        src="/Lessons/12.%20Vue.%20Properties.%20Refs.%20Modal/Tasks/Task 1. SizeOfSun/assets/sun.svg"
-      />
-    </div>
+    />
   </div>
    
   <div
     class="sun-container__block"
-  >
-    <h3>
-      Год:
-    </h3>
-     
-    <span>
-      
-              2021
-          
-    </span>
-     
-    <h3>
-      Диаметр солнца:
-    </h3>
-     
-    <span>
-      
-              1392700 км
-          
-    </span>
-  </div>
+  />
 </div>
 `;
 
