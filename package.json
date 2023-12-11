@@ -3,6 +3,8 @@
     "version": "1.0.0",
     "description": "JS and Vue course",
     "scripts": {
+        "lint": "eslint --ext .js ./",
+        "lint:fix": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
         "test": "jest --reporters=default --reporters=jest-junit -t",
         "test-i": "jest -o",
         "test-watch": "jest --watch -t",
@@ -20,6 +22,7 @@
         "babel-preset-env": "^1.7.0",
         "css-loader": "^6.7.1",
         "eslint": "^8.55.0",
+        "eslint-plugin-react": "^7.33.2",
         "file-loader": "^6.2.0",
         "jest": "^27.0.0",
         "jest-cli": "^27.0.0",
