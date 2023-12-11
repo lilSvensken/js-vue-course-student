@@ -1,7 +1,7 @@
 const loaderMixin = {
-    // Начало
+  // Начало
 
-    // Конец
-};
+  // Конец
+}
 
-export default loaderMixin;
+export default loaderMixin

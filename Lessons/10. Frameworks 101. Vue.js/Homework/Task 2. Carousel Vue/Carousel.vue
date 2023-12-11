@@ -6,18 +6,18 @@
 
 <script>
 export default {
-    name: 'Carousel',
-    data() {
-        // Массив картинок уже получен
-        const images = this.$root.data;
-        return {
-            images,
-        };
-    },
-    // Начало
+  name: 'Carousel',
+  data () {
+    // Массив картинок уже получен
+    const images = this.$root.data
+    return {
+      images
+    }
+  }
+  // Начало
 
-    // Конец
-};
+  // Конец
+}
 </script>
 
 <style>

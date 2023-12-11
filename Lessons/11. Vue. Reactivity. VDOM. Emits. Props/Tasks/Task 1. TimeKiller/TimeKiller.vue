@@ -8,11 +8,11 @@
 
 <script>
 export default {
-    name: 'TimeKiller',
-    // Начало
+  name: 'TimeKiller'
+  // Начало
 
-    // Конец
-};
+  // Конец
+}
 </script>
 
 <style>

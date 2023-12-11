@@ -4,10 +4,10 @@
 
 <script>
 import Satellite
-    from '../../Lessons/10. Frameworks 101. Vue.js/Tasks/Task 1. Satellite/Satellite.vue';
+  from '../../Lessons/10. Frameworks 101. Vue.js/Tasks/Task 1. Satellite/Satellite.vue'
 
 export default {
-    name: 'SatelliteComponent',
-    components: { Satellite },
-};
+  name: 'SatelliteComponent',
+  components: { Satellite }
+}
 </script>

@@ -1,12 +1,12 @@
 export default {
-    state: {
-        fieldSize: 3,
-        // Начало
-
-        // Конец
-    },
+  state: {
+    fieldSize: 3
     // Начало
 
     // Конец
-    namespaced: true,
-};
+  },
+  // Начало
+
+  // Конец
+  namespaced: true
+}

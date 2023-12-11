@@ -4,9 +4,6 @@
             Сохранить
         </Child>
 
-
-
-
         <!--        Именованные слоты-->
         <!--        <Child>-->
         <!--            <template v-slot:header> - header - имя слота-->
@@ -24,10 +21,6 @@
         <!--            </template>-->
         <!--        </Child>-->
 
-
-
-
-
         <!--        Передача данных в слоты-->
         <!--        <Child @save="onSave">-->
         <!--            <template v-slot:default="currentProps">-->
@@ -43,18 +36,18 @@
 </template>
 
 <script>
-import Child from './Child.vue';
+import Child from './Child.vue'
 
 export default {
-    name: "Parent",
-    components: {
-        Child,
-    },
-    data() {
-        return {
-            name: '',
-            isPopupVisible: false,
-        };
-    },
-};
+  name: 'Parent',
+  components: {
+    Child
+  },
+  data () {
+    return {
+      name: '',
+      isPopupVisible: false
+    }
+  }
+}
 </script>

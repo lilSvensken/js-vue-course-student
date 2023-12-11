@@ -13,35 +13,35 @@
 </template>
 
 <script>
-import Child from './Child.vue';
+import Child from './Child.vue'
 
 export default {
-    name: "Parent",
-    components: {
-        Child,
+  name: 'Parent',
+  components: {
+    Child
+  },
+  data () {
+    return {
+      manoolItems: [
+        { id: 0, text: 'Один манул' },
+        { id: 1, text: 'Два манула' },
+        { id: 2, text: 'Три манула' },
+        { id: 3, text: 'Четыре манула' }
+      ],
+      maxIndex: 3,
+      newText: ''
+    }
+  },
+  methods: {
+    onAddManool () {
+      this.maxIndex += 1
+      this.manoolItems.push({ id: this.maxIndex, text: this.newText })
+      this.newText = ''
     },
-    data() {
-        return {
-            manoolItems: [
-                { id: 0, text: 'Один манул' },
-                { id: 1, text: 'Два манула' },
-                { id: 2, text: 'Три манула' },
-                { id: 3, text: 'Четыре манула' },
-            ],
-            maxIndex: 3,
-            newText: '',
-        };
-    },
-    methods: {
-        onAddManool() {
-            this.maxIndex += 1;
-            this.manoolItems.push({ id: this.maxIndex, text: this.newText });
-            this.newText = '';
-        },
-        // описываем событие, переданное из ребенка через $emit
-        onRemoveManool(index) {
-            this.manoolItems.splice(index, 1);
-        },
-    },
-};
+    // описываем событие, переданное из ребенка через $emit
+    onRemoveManool (index) {
+      this.manoolItems.splice(index, 1)
+    }
+  }
+}
 </script>

@@ -14,6 +14,6 @@
 
 <script>
 export default {
-    name: "Tac",
-};
+  name: 'Tac'
+}
 </script>

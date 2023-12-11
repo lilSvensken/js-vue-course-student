@@ -8,11 +8,11 @@
 
 <script>
 export default {
-    name: 'Recipes',
-    // Начало
+  name: 'Recipes'
+  // Начало
 
-    // Конец
-};
+  // Конец
+}
 </script>
 
 <style>

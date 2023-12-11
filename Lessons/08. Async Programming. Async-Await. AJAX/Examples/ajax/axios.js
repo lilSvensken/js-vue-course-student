@@ -2,28 +2,26 @@
 
 // get-запрос
 axios.get('/getorgs.php', {
-    params: {
-        fio: 'Что-то написано',
-        type: 'json',
-    },
+  params: {
+    fio: 'Что-то написано',
+    type: 'json'
+  }
 })
-    .then((response) => {
-        console.log(response);
-    })
-    .catch((error) => {
-        console.log(error);
-    });
-
-
+  .then((response) => {
+    console.log(response)
+  })
+  .catch((error) => {
+    console.log(error)
+  })
 
 // post-запрос
 axios.post('/user', {
-    firstName: 'Elon',
-    lastName: 'Musk',
+  firstName: 'Elon',
+  lastName: 'Musk'
 })
-    .then((response) => {
-        console.log(response);
-    })
-    .catch((error) => {
-        console.log(error);
-    });
+  .then((response) => {
+    console.log(response)
+  })
+  .catch((error) => {
+    console.log(error)
+  })

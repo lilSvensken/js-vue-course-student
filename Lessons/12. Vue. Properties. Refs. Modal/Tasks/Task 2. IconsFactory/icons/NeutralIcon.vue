@@ -94,6 +94,6 @@
 
 <script>
 export default {
-    name: "NeutralIcon",
-};
+  name: 'NeutralIcon'
+}
 </script>

@@ -14,17 +14,17 @@
 </template>
 
 <script>
-import Vue from 'vue';
-import { Plugin } from 'vue-fragment';
+import Vue from 'vue'
+import { Plugin } from 'vue-fragment'
 
-Vue.use(Plugin);
+Vue.use(Plugin)
 
 // import frag from "vue-frag";
 
 export default {
-    name: 'Fragments',
-    directives: {
-        frag,
-    },
-};
+  name: 'Fragments',
+  directives: {
+    frag
+  }
+}
 </script>

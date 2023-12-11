@@ -6,9 +6,9 @@
 
 <script>
 export default {
-    name: 'ItisIcon',
-    // Начало
+  name: 'ItisIcon'
+  // Начало
 
-    // Конец
-};
+  // Конец
+}
 </script>

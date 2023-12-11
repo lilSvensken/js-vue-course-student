@@ -2,47 +2,47 @@
  * @jest-environment jsdom
  */
 
-import fetchMock from "jest-fetch-mock";
-import { waitFor } from "@testing-library/dom";
+import fetchMock from 'jest-fetch-mock'
+import { waitFor } from '@testing-library/dom'
 
-fetchMock.enableMocks();
+import { MEMES } from './__fixtures__/responses'
+import giveMeMeme from './index'
 
-import { MEMES } from './__fixtures__/responses';
-import giveMeMeme from './index';
+fetchMock.enableMocks()
 
 describe('08.c.2 giveMeMeme', () => {
-    beforeEach(() => {
-        fetch.resetMocks();
-        jest.spyOn(global.Math, 'random').mockReturnValue(0.01);
-    });
+  beforeEach(() => {
+    fetch.resetMocks()
+    jest.spyOn(global.Math, 'random').mockReturnValue(0.01)
+  })
 
-    afterEach(() => {
-        jest.spyOn(global.Math, 'random').mockRestore();
-    })
+  afterEach(() => {
+    jest.spyOn(global.Math, 'random').mockRestore()
+  })
 
-    it('08.c.2.1 get meme with id 87743020', async () => {
-        jest.useFakeTimers();
+  it('08.c.2.1 get meme with id 87743020', async () => {
+    jest.useFakeTimers()
 
-        fetch.mockResponseOnce(JSON.stringify({
-            success: true,
-            data: {
-                memes: MEMES,
-            },
-        }));
+    fetch.mockResponseOnce(JSON.stringify({
+      success: true,
+      data: {
+        memes: MEMES
+      }
+    }))
 
-        document.body.innerHTML = '<div class="main"></div>';
+    document.body.innerHTML = '<div class="main"></div>'
 
-        giveMeMeme();
+    giveMeMeme()
 
-        const button = document.querySelector('button');
-        button.click();
+    const button = document.querySelector('button')
+    button.click()
 
-        await waitFor(() =>  expect(document.querySelector('img') !== null).toBe(true));
+    await waitFor(() => expect(document.querySelector('img') !== null).toBe(true))
 
-        const imgElement = document.querySelector('img');
-        const imgUrl = imgElement.getAttribute('src');
+    const imgElement = document.querySelector('img')
+    const imgUrl = imgElement.getAttribute('src')
 
-        expect(imgUrl).toEqual('https://i.imgflip.com/1g8my4.jpg');
-        expect(fetch).toHaveBeenCalledTimes(1);
-    });
-});
+    expect(imgUrl).toEqual('https://i.imgflip.com/1g8my4.jpg')
+    expect(fetch).toHaveBeenCalledTimes(1)
+  })
+})

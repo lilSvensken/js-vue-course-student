@@ -63,6 +63,6 @@
 
 <script>
 export default {
-    name: "AnnoyedIcon",
-};
+  name: 'AnnoyedIcon'
+}
 </script>

@@ -9,25 +9,25 @@
 
 <script>
 export default {
-    name: 'Component',
-    data() {
-        return {
-            name: 'Kimi',
-            number: 42,
-            isErrorEnable: true,
-        };
-    },
-    methods: {
-        revertError() {
-            this.isErrorEnable = !this.isErrorEnable;
-        },
-    },
-    computed: {
-        buttonClasses() {
-            return [ 'button', this.isErrorEnable ? 'button--error' : '' ];
-        },
-    },
-};
+  name: 'Component',
+  data () {
+    return {
+      name: 'Kimi',
+      number: 42,
+      isErrorEnable: true
+    }
+  },
+  methods: {
+    revertError () {
+      this.isErrorEnable = !this.isErrorEnable
+    }
+  },
+  computed: {
+    buttonClasses () {
+      return ['button', this.isErrorEnable ? 'button--error' : '']
+    }
+  }
+}
 </script>
 
 <style>

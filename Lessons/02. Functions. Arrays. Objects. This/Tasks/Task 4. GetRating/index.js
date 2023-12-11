@@ -1,6 +1,6 @@
 const getRating = (object) => {
-	const { likes, dislikes } = object;
-	return likes - dislikes;
-};
+  const { likes, dislikes } = object
+  return likes - dislikes
+}
 
-export default getRating;
+export default getRating

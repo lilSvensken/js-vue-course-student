@@ -28,30 +28,30 @@
 </template>
 
 <script>
-import Vue from 'vue';
-import Modal from 'vue-js-modal';
+import Vue from 'vue'
+import Modal from 'vue-js-modal'
 
-Vue.use(Modal);
+Vue.use(Modal)
 
 export default {
-    name: 'ModalContainer',
-    data() {
-        return {
-            modalText: 'Закрой меня, пожалуйста',
-        };
+  name: 'ModalContainer',
+  data () {
+    return {
+      modalText: 'Закрой меня, пожалуйста'
+    }
+  },
+  methods: {
+    showModal () {
+      // После добавления зависимости Modal в компонент в данном экземпляре
+      // становится доступен элемент $modal. К нему мы и обращаемся
+      // для отображения модального окна
+      this.$modal.show('greeting')
     },
-    methods: {
-        showModal() {
-            // После добавления зависимости Modal в компонент в данном экземпляре
-            // становится доступен элемент $modal. К нему мы и обращаемся
-            // для отображения модального окна
-            this.$modal.show('greeting');
-        },
-        hideModal() {
-            this.$modal.hide('greeting');
-        },
-    },
-};
+    hideModal () {
+      this.$modal.hide('greeting')
+    }
+  }
+}
 </script>
 
 <style>

@@ -21,20 +21,20 @@
 
 <script>
 export default {
-    name: 'Satellite',
-    data() {
-        return {
-            radius: 0,
-            EARTH_MASS: 6E24,
-            GRAVITY_CONST: 6.67E-11,
-        };
-    },
-    computed: {
-        speed() {
-            return Math.round(Math.sqrt(this.GRAVITY_CONST * this.EARTH_MASS / (this.radius * 1e3)));
-        },
-    },
-};
+  name: 'Satellite',
+  data () {
+    return {
+      radius: 0,
+      EARTH_MASS: 6E24,
+      GRAVITY_CONST: 6.67E-11
+    }
+  },
+  computed: {
+    speed () {
+      return Math.round(Math.sqrt(this.GRAVITY_CONST * this.EARTH_MASS / (this.radius * 1e3)))
+    }
+  }
+}
 </script>
 
 <style>

@@ -12,15 +12,15 @@
 
 <script>
 export default {
-    name: "Child",
-    // Получаем данные от родителя в виде пропа (property)
-    props: {
-        manoolItems: {
-            type: Array,
-            default: () => [],
-        },
-    },
-    // Можно использовать и короткую запись
-    // props: [ 'manoolItems' ],
-};
+  name: 'Child',
+  // Получаем данные от родителя в виде пропа (property)
+  props: {
+    manoolItems: {
+      type: Array,
+      default: () => []
+    }
+  }
+  // Можно использовать и короткую запись
+  // props: [ 'manoolItems' ],
+}
 </script>

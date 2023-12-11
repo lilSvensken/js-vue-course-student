@@ -1,19 +1,19 @@
-var name;
+let name
 
-function logDate() {
-    for (var i = 0; i < 10; i++) {
-        var text = 'i = ' + i;
-    }
-    console.log(text);
+function logDate () {
+  for (let i = 0; i < 10; i++) {
+    var text = 'i = ' + i
+  }
+  console.log(text)
 }
 
-logDate();
+logDate()
 
-function logDate1() {
-    console.log(text);
-    for (var i = 0; i < 10; i++) {
-        var text = 'i = ' + i;
-    }
+function logDate1 () {
+  console.log(text)
+  for (let i = 0; i < 10; i++) {
+    var text = 'i = ' + i
+  }
 }
 
-logDate1();
+logDate1()

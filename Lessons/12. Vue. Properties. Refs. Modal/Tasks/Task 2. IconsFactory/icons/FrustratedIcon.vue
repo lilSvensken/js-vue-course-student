@@ -75,6 +75,6 @@
 
 <script>
 export default {
-    name: "FrustratedIcon",
-};
+  name: 'FrustratedIcon'
+}
 </script>

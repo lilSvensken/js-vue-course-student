@@ -62,6 +62,6 @@
 
 <script>
 export default {
-    name: "StressedIcon",
-};
+  name: 'StressedIcon'
+}
 </script>

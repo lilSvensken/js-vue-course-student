@@ -5,15 +5,15 @@
 </template>
 
 <script>
-import CardBlock from './CardBlock.vue';
+import CardBlock from './CardBlock.vue'
 
 export default {
-    name: 'MovieCard',
-    components: { CardBlock },
-    // Начало
+  name: 'MovieCard',
+  components: { CardBlock }
+  // Начало
 
-    // Конец
-};
+  // Конец
+}
 </script>
 
 <style>

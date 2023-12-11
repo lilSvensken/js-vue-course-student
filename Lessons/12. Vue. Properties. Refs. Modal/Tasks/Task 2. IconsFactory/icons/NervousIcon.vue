@@ -121,6 +121,6 @@
 
 <script>
 export default {
-    name: "NervousIcon",
-};
+  name: 'NervousIcon'
+}
 </script>

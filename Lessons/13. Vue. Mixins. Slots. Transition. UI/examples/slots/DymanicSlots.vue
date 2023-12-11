@@ -8,11 +8,11 @@
 
 <script>
 export default {
-    name: "Child",
-    data() {
-        return {
-            slotName: 'header',
-        };
-    },
-};
+  name: 'Child',
+  data () {
+    return {
+      slotName: 'header'
+    }
+  }
+}
 </script>

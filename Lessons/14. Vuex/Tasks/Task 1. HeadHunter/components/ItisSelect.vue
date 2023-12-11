@@ -15,21 +15,21 @@
 
 <script>
 export default {
-    name: "ItisSelect",
-    model: {
-        prop: 'value',
-        event: 'change',
-    },
-    props: {
-        options: {
-            type: Array,
-            default: () => [],
-        },
-    },
-    methods: {
-        handleChange({ target }) {
-            this.$emit('change', target.value);
-        },
-    },
-};
+  name: 'ItisSelect',
+  model: {
+    prop: 'value',
+    event: 'change'
+  },
+  props: {
+    options: {
+      type: Array,
+      default: () => []
+    }
+  },
+  methods: {
+    handleChange ({ target }) {
+      this.$emit('change', target.value)
+    }
+  }
+}
 </script>

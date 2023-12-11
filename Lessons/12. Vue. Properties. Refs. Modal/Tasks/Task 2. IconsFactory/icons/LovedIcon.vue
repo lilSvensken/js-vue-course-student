@@ -103,6 +103,6 @@
 
 <script>
 export default {
-    name: "LovedIcon",
-};
+  name: 'LovedIcon'
+}
 </script>

@@ -19,20 +19,20 @@
 <script>
 
 export default {
-    name: 'TheSun',
-    data() {
-        return {
-            diameter: 1392700,
-            year: 2021,
-            // Начало
+  name: 'TheSun',
+  data () {
+    return {
+      diameter: 1392700,
+      year: 2021
+      // Начало
 
-            // Конец
-        };
-    },
-    // Начало
+      // Конец
+    }
+  }
+  // Начало
 
-    // Конец
-};
+  // Конец
+}
 </script>
 
 <style>

@@ -8,11 +8,11 @@
 
 <script>
 export default {
-    name: "Vacancies",
-    // Начало
+  name: 'Vacancies'
+  // Начало
 
-    // Конец
-};
+  // Конец
+}
 </script>
 
 <style>

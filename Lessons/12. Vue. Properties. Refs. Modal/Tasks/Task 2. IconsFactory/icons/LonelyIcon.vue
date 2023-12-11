@@ -75,6 +75,6 @@
 
 <script>
 export default {
-    name: "LonelyIcon",
-};
+  name: 'LonelyIcon'
+}
 </script>

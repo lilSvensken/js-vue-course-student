@@ -107,6 +107,6 @@
 
 <script>
 export default {
-    name: "AngryIcon",
-};
+  name: 'AngryIcon'
+}
 </script>

@@ -1,7 +1,7 @@
 const getDaysAmount = (month, year) => {
-    // Начало
+  // Начало
 
-    // Конец
-};
+  // Конец
+}
 
-export default getDaysAmount;
+export default getDaysAmount

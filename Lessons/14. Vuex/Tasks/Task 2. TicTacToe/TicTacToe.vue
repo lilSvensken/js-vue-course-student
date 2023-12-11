@@ -7,16 +7,16 @@
 </template>
 
 <script>
-import Tic from './Icons/Tic.vue';
-import Tac from './Icons/Tac.vue';
+import Tic from './Icons/Tic.vue'
+import Tac from './Icons/Tac.vue'
 
 export default {
-    name: 'TicTacToe',
-    components: { Tic, Tac },
-    // Начало
+  name: 'TicTacToe',
+  components: { Tic, Tac }
+  // Начало
 
-    // Конец
-};
+  // Конец
+}
 </script>
 
 <style>

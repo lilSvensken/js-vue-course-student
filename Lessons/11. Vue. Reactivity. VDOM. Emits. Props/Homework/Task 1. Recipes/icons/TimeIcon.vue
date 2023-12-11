@@ -26,6 +26,6 @@
 
 <script>
 export default {
-    name: "TimeIcon",
-};
+  name: 'TimeIcon'
+}
 </script>

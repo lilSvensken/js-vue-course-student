@@ -107,6 +107,6 @@
 
 <script>
 export default {
-    name: "SurprisedIcon",
-};
+  name: 'SurprisedIcon'
+}
 </script>

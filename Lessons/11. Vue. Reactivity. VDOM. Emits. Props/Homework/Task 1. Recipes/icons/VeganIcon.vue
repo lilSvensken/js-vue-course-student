@@ -19,6 +19,6 @@
 
 <script>
 export default {
-    name: "VeganIcon",
-};
+  name: 'VeganIcon'
+}
 </script>

@@ -6,8 +6,8 @@
 
 <script>
 export default {
-    name: 'CardBlock',
-};
+  name: 'CardBlock'
+}
 </script>
 
 <style>

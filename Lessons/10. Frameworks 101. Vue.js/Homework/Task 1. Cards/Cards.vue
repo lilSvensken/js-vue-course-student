@@ -6,18 +6,18 @@
 
 <script>
 export default {
-    name: 'Cards',
-    data() {
-        // Массив данных для карточек товаров уже получен
-        const cards = this.$root.data;
-        return {
-            cards,
-        };
-    },
-    // Начало
+  name: 'Cards',
+  data () {
+    // Массив данных для карточек товаров уже получен
+    const cards = this.$root.data
+    return {
+      cards
+    }
+  }
+  // Начало
 
-    // Конец
-};
+  // Конец
+}
 </script>
 
 <style>

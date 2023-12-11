@@ -99,6 +99,6 @@
 
 <script>
 export default {
-    name: "ExcitedIcon",
-};
+  name: 'ExcitedIcon'
+}
 </script>

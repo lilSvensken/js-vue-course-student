@@ -14,6 +14,6 @@
 
 <script>
 export default {
-    name: "Tic",
-};
+  name: 'Tic'
+}
 </script>

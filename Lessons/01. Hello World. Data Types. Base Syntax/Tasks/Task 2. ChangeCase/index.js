@@ -1,13 +1,13 @@
 const changeCase = (str) => {
-	let result = "";
+  let result = ''
 
-	for (let i = 0; i < str.length; i++) {
-		const symbol = str[i];
-		const isUpperSymbol = symbol.toUpperCase() === symbol;
-		result += isUpperSymbol ? symbol.toLowerCase() : symbol.toUpperCase();
-	}
+  for (let i = 0; i < str.length; i++) {
+    const symbol = str[i]
+    const isUpperSymbol = symbol.toUpperCase() === symbol
+    result += isUpperSymbol ? symbol.toLowerCase() : symbol.toUpperCase()
+  }
 
-	return result;
-};
+  return result
+}
 
-export default changeCase;
+export default changeCase

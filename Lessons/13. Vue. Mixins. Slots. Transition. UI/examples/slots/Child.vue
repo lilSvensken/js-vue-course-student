@@ -7,8 +7,6 @@
             <slot>Подтвердить</slot>
         </button>
 
-
-
         <!--        Именованные слоты-->
         <!--        <header>-->
         <!--            <slot name="header"></slot>-->
@@ -19,9 +17,6 @@
         <!--        <footer>-->
         <!--            <slot name="footer"></slot>-->
         <!--        </footer>-->
-
-
-
 
         <!--        Передача данных в слоты-->
         <!--        <button-->
@@ -37,6 +32,6 @@
 
 <script>
 export default {
-    name: "Child",
-};
+  name: 'Child'
+}
 </script>

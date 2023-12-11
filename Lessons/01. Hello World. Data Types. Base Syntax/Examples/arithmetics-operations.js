@@ -1,40 +1,28 @@
 // "+" сложение;
 
 // Краткий вариант сложения:
-i = i + 1;
+i = i + 1
 // То же самое, что и:
-i += 1;
-
-
-
+i += 1
 
 // "-" вычитание;
 
 // Краткий вариант вычитания:
-i = i - 1;
+i = i - 1
 // То же самое, что и:
-i -= 1;
-
-
-
+i -= 1
 
 // "!" - отрицание:
-console.log(!true);
-console.log(!!1);
-console.log(!null);
-const text = '';
-console.log(!text);
-
-
-
+console.log(!true)
+console.log(!!1)
+console.log(!null)
+const text = ''
+console.log(!text)
 
 // "*" - умножение;
 // "/" - деление;
 // "**" - возведение в степень;
 
-
-
-
 // "%" - остаток от деления:
-const rest = 9 % 2;
-console.log(rest);
+const rest = 9 % 2
+console.log(rest)

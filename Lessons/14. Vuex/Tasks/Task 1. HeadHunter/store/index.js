@@ -1,25 +1,25 @@
-const baseUrl = 'https://api.hh.ru/vacancies';
+const baseUrl = 'https://api.hh.ru/vacancies'
 
 const state = {
-    // Начало
+  // Начало
 
-    // Конец
-};
+  // Конец
+}
 
 const mutations = {
-    // Начало
+  // Начало
 
-    // Конец
-};
+  // Конец
+}
 
 const actions = {
-    // Начало
+  // Начало
 
-    // Конец
-};
+  // Конец
+}
 
 export default {
-    state,
-    mutations,
-    actions,
-};
+  state,
+  mutations,
+  actions
+}

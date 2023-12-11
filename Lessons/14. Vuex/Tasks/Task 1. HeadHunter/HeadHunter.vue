@@ -8,16 +8,16 @@
 </template>
 
 <script>
-import SearchFilter from './components/SearchFilter.vue';
-import Vacancies from './components/Vacancies.vue';
+import SearchFilter from './components/SearchFilter.vue'
+import Vacancies from './components/Vacancies.vue'
 
 export default {
-    name: 'HeadHunter',
-    components: { SearchFilter, Vacancies },
-    // Начало
+  name: 'HeadHunter',
+  components: { SearchFilter, Vacancies }
+  // Начало
 
-    // Конец
-};
+  // Конец
+}
 </script>
 
 <style>

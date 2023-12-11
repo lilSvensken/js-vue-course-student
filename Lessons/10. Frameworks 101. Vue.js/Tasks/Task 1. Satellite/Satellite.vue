@@ -18,11 +18,11 @@
 
 <script>
 export default {
-    name: 'Satellite',
-    // Начало
+  name: 'Satellite'
+  // Начало
 
-    // Конец
-};
+  // Конец
+}
 </script>
 
 <style>

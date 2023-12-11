@@ -14,51 +14,51 @@
 </template>
 
 <script>
-import ItisIcon from './ItisIcon.vue';
+import ItisIcon from './ItisIcon.vue'
 
 export default {
-    name: 'IconCarousel',
-    components: {
-        ItisIcon,
+  name: 'IconCarousel',
+  components: {
+    ItisIcon
+  },
+  data () {
+    return {
+      iconType: 'happy',
+      iconOptions: [
+        'angry',
+        'annoyed',
+        'embarrassed',
+        'excited',
+        'frustrated',
+        'happy',
+        'lonely',
+        'loved',
+        'nervous',
+        'neutral',
+        'sad',
+        'scared',
+        'sick',
+        'stressed',
+        'surprised',
+        'tired'
+      ],
+      amountOfOptions: 0
+    }
+  },
+  mounted () {
+    this.amountOfOptions = this.iconOptions.length
+  },
+  methods: {
+    randomIcon () {
+      const iconIndex = this.getRandomInt(0, this.amountOfOptions)
+      this.iconType = this.iconOptions[iconIndex]
     },
-    data() {
-        return {
-            iconType: 'happy',
-            iconOptions: [
-                'angry',
-                'annoyed',
-                'embarrassed',
-                'excited',
-                'frustrated',
-                'happy',
-                'lonely',
-                'loved',
-                'nervous',
-                'neutral',
-                'sad',
-                'scared',
-                'sick',
-                'stressed',
-                'surprised',
-                'tired',
-            ],
-            amountOfOptions: 0,
-        };
-    },
-    mounted() {
-        this.amountOfOptions = this.iconOptions.length;
-    },
-    methods: {
-        randomIcon() {
-            const iconIndex = this.getRandomInt(0, this.amountOfOptions);
-            this.iconType = this.iconOptions[iconIndex];
-        },
-        getRandomInt(min, max) {
-            return Math.floor(Math.random() * (max - min)) + min;
-        },
-    },
+    getRandomInt (min, max) {
+      return Math.floor(Math.random() * (max - min)) + min
+    }
+  }
 
-};
+}
 </script>
 
 <style>

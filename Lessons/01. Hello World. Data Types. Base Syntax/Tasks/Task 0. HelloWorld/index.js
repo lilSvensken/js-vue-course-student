@@ -1,5 +1,5 @@
 const helloWorld = () => {
-	console.log('Hello World!')
-};
+  console.log('Hello World!')
+}
 
-export default helloWorld;
+export default helloWorld

@@ -29,7 +29,6 @@
 //     })
 //   });
 
-
 // let currentUserId = 1;
 //
 // fetch(`https://jsonplaceholder.typicode.com/posts?userId=${currentUserId}`)
@@ -43,7 +42,6 @@
 //         console.log(json)
 //       });
 //   });
-
 
 // fetch('https://jsonplaceholder.typicode.com/posts/1', {
 //   method: 'DELETE',
@@ -68,35 +66,22 @@
 //     })
 // })
 
-const BASE_URL = 'https://www.anapioficeandfire.com/api/characters/';
+const BASE_URL = 'https://www.anapioficeandfire.com/api/characters/'
 
 const getCharacterData = (characterId) => fetch(BASE_URL + characterId)
   .then((data) => data.json())
   .then((data) => {
-    alert(`${data.name} - ${data.gender}`);
+    alert(`${data.name} - ${data.gender}`)
   })
 
 getCharacterData(583).then((info) => {
-  console.log(info); // Jon Snow, playedBy: Kit Harington
-});
+  console.log(info) // Jon Snow, playedBy: Kit Harington
+})
 
 const btnsRef = document.querySelectorAll('.btn')
 
 btnsRef.forEach(btn => {
   btn.addEventListener('click', () => {
-    getCharacterData(Number(btn.value));
+    getCharacterData(Number(btn.value))
   })
 })
-
-
-
-
-
-
-
-
-
-
-
-
-

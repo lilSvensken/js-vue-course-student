@@ -1,9 +1,9 @@
-const CHECK_NUM = 42;
+const CHECK_NUM = 42
 
 const transformFortyTwo = (arr) => {
-	return arr.map(item => {
-		return (item % CHECK_NUM) ? item : 'forty two!';
-	})
-};
+  return arr.map(item => {
+    return (item % CHECK_NUM) ? item : 'forty two!'
+  })
+}
 
-export default transformFortyTwo;
+export default transformFortyTwo

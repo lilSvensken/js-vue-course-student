@@ -27,28 +27,28 @@
 <script>
 
 export default {
-    name: 'TheSun',
-    data() {
-        return {
-            diameter: 1392700,
-            year: 2021,
-            imageWidthInPx: 450,
-            REDUCTION_FACTOR: 0.95,
-            NUM_OF_ADDITIONS_YEARS: 500000,
-        };
+  name: 'TheSun',
+  data () {
+    return {
+      diameter: 1392700,
+      year: 2021,
+      imageWidthInPx: 450,
+      REDUCTION_FACTOR: 0.95,
+      NUM_OF_ADDITIONS_YEARS: 500000
+    }
+  },
+  methods: {
+    onReduceSunSize () {
+      this.year += this.NUM_OF_ADDITIONS_YEARS
+      this.diameter = this.multiplyByFactor(this.diameter)
+      this.imageWidthInPx = this.multiplyByFactor(this.imageWidthInPx)
+      this.$refs.sun.style.width = `${this.imageWidthInPx}px`
     },
-    methods: {
-        onReduceSunSize() {
-            this.year += this.NUM_OF_ADDITIONS_YEARS;
-            this.diameter = this.multiplyByFactor(this.diameter);
-            this.imageWidthInPx = this.multiplyByFactor(this.imageWidthInPx);
-            this.$refs.sun.style.width = `${this.imageWidthInPx}px`;
-        },
-        multiplyByFactor(value) {
-            return Math.round(value * this.REDUCTION_FACTOR);
-        },
-    },
-};
+    multiplyByFactor (value) {
+      return Math.round(value * this.REDUCTION_FACTOR)
+    }
+  }
+}
 </script>
 
 <style>

@@ -7,9 +7,9 @@
 // import axios from 'axios';
 
 const setCatGallery = () => {
-    // Начало
+  // Начало
 
-    // Конец
-};
+  // Конец
+}
 
-export default setCatGallery;
+export default setCatGallery

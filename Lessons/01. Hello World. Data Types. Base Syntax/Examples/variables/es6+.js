@@ -1,30 +1,29 @@
 // let
 
-function logDate() {
-    for (let i = 0; i < 10; i++) {
-        let text = 'i = ' + i;
-    }
-    console.log(text);
+function logDate () {
+  for (let i = 0; i < 10; i++) {
+    const text = 'i = ' + i
+  }
+  console.log(text)
 }
 
-logDate();
+logDate()
 
-function logDate1() {
-    console.log(name);
-    let name = 'Justine';
+function logDate1 () {
+  console.log(name)
+  const name = 'Justine'
 }
 
-logDate1();
+logDate1()
 
 // const
 
+const name = 'Justine'
+let surname = 'Henin'
 
-const name = 'Justine';
-let surname = 'Henin';
+name = 'Maria'
+surname = 'Sharapova'
 
-name = 'Maria';
-surname = 'Sharapova';
-
-const letters = [ 'a', 'b', 'c' ];
-letters[3] = 'e';
-console.log(letters);
+const letters = ['a', 'b', 'c']
+letters[3] = 'e'
+console.log(letters)

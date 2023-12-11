@@ -16,28 +16,28 @@
 </template>
 
 <script>
-import TimeElement from './TimeElement.vue';
+import TimeElement from './TimeElement.vue'
 
 export default {
-    name: 'TimeKiller',
-    components: { TimeElement },
-    data() {
-        return {
-            times: [],
-            maxId: 0,
-        };
+  name: 'TimeKiller',
+  components: { TimeElement },
+  data () {
+    return {
+      times: [],
+      maxId: 0
+    }
+  },
+  methods: {
+    onAddTime () {
+      this.maxId += 1
+      const newTime = new Date()
+      this.times.push({ id: this.maxId, time: newTime })
     },
-    methods: {
-        onAddTime() {
-            this.maxId += 1;
-            const newTime = new Date();
-            this.times.push({ id: this.maxId, time: newTime });
-        },
-        onKillTime(timeId) {
-            this.times = this.times.filter(({ id }) => id !== timeId);
-        },
-    },
-};
+    onKillTime (timeId) {
+      this.times = this.times.filter(({ id }) => id !== timeId)
+    }
+  }
+}
 </script>
 
 <style>

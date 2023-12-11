@@ -1,11 +1,11 @@
-import WatchJS from '../../helpers/melanke-watchjs.js';
+import WatchJS from '../../helpers/melanke-watchjs.js'
 
-const { watch } = WatchJS;
+const { watch } = WatchJS
 
 const setNewsMaker = () => {
-    // Начало
+  // Начало
 
-    // Конец
-};
+  // Конец
+}
 
-export default setNewsMaker;
+export default setNewsMaker

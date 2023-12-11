@@ -1,25 +1,25 @@
-import 'babel-polyfill';
-import Vue from 'vue';
-import App from './App.vue';
+import 'babel-polyfill'
+import Vue from 'vue'
+import App from './App.vue'
 
-import moment from 'moment';
+import moment from 'moment'
 
-moment.locale('ru');
+moment.locale('ru')
 
-Vue.config.productionTip = false;
+Vue.config.productionTip = false
 
 window.appendVueComponent = function (target, component, data) {
-    Vue.component('app', function (resolve, reject) {
-        resolve(require('./App/' + component + '.vue'));
-    });
+  Vue.component('app', function (resolve, reject) {
+    resolve(require('./App/' + component + '.vue'))
+  })
 
-    return new Vue({
-        el: target,
-        data: () => ({ data }),
-        render: function (createElement) {
-            return createElement(App);
-        },
-    });
-};
+  return new Vue({
+    el: target,
+    data: () => ({ data }),
+    render: function (createElement) {
+      return createElement(App)
+    }
+  })
+}
 
-window.moment = moment;
+window.moment = moment

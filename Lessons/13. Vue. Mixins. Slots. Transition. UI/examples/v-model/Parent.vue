@@ -6,7 +6,6 @@
         <!--            @input="val => { name = val }"-->
         <!--        />-->
 
-
         <!--        <CommonBlock :value="isPopupVisible" v-model="name" />-->
         <!--        <CommonBlock-->
         <!--            :name="name"-->
@@ -17,18 +16,18 @@
 </template>
 
 <script>
-import Child from './Child.vue';
+import Child from './Child.vue'
 
 export default {
-    name: "Parent",
-    components: {
-        Child,
-    },
-    data() {
-        return {
-            name: '',
-            isPopupVisible: false,
-        };
-    },
-};
+  name: 'Parent',
+  components: {
+    Child
+  },
+  data () {
+    return {
+      name: '',
+      isPopupVisible: false
+    }
+  }
+}
 </script>

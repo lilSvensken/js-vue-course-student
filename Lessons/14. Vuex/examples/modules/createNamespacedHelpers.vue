@@ -4,18 +4,18 @@
 </template>
 
 <script>
-import { createNamespacedHelpers } from 'vuex';
+import { createNamespacedHelpers } from 'vuex'
 
-const { mapState, mapActions, mapGetters } = createNamespacedHelpers('errandsModule');
+const { mapState, mapActions, mapGetters } = createNamespacedHelpers('errandsModule')
 
 export default {
-    name: 'createNamespacedHelpers',
-    computed: {
-        ...mapState([ 'errands' ]),
-        ...mapGetters([ 'someGetter' ]),
-    },
-    methods: {
-        ...mapActions([ 'someAction' ]),
-    },
-};
+  name: 'createNamespacedHelpers',
+  computed: {
+    ...mapState(['errands']),
+    ...mapGetters(['someGetter'])
+  },
+  methods: {
+    ...mapActions(['someAction'])
+  }
+}
 </script>

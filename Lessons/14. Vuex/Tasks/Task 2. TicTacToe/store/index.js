@@ -1,14 +1,14 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
+import Vue from 'vue'
+import Vuex from 'vuex'
 
 // Начало
 
 // Конец
 
-Vue.use(Vuex);
+Vue.use(Vuex)
 
 export default new Vuex.Store({
-    // Начало
+  // Начало
 
-    // Конец
-});
+  // Конец
+})

@@ -1,19 +1,19 @@
-const axios = require('axios');
+const axios = require('axios')
 
 class Api {
-    _baseUrl;
+  _baseUrl
 
-    constructor() {
-        this._baseUrl = 'someUrl';
-    }
+  constructor () {
+    this._baseUrl = 'someUrl'
+  }
 
-    getItems() {
-        return axios.get(this._baseUrl).then(
-            // handle correct response
-        ).catch(
-            // handle errors
-        );
-    }
+  getItems () {
+    return axios.get(this._baseUrl).then(
+      // handle correct response
+    ).catch(
+      // handle errors
+    )
+  }
 }
 
-export default new Api();
+export default new Api()

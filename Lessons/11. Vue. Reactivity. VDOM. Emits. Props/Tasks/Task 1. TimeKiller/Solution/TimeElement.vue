@@ -14,14 +14,14 @@
 
 <script>
 export default {
-    name: "TimeElement",
-    props: {
-        times: {
-            type: Array,
-            default: () => [],
-        },
-    },
-};
+  name: 'TimeElement',
+  props: {
+    times: {
+      type: Array,
+      default: () => []
+    }
+  }
+}
 </script>
 
 <style>

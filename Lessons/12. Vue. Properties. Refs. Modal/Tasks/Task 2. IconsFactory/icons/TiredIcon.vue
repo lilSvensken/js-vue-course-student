@@ -87,6 +87,6 @@
 
 <script>
 export default {
-    name: "TiredIcon",
-};
+  name: 'TiredIcon'
+}
 </script>

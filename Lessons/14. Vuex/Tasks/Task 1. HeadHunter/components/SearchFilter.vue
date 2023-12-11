@@ -6,32 +6,31 @@
     </div>
 </template>
 
-
 <script>
-import ItisSelect from './ItisSelect.vue';
+import ItisSelect from './ItisSelect.vue'
 import {
-    EDUCATION_LEVEL_OPTIONS,
-    EXPERIENCE_OPTIONS,
-    SCHEDULE_OPTIONS,
-} from '../constants';
+  EDUCATION_LEVEL_OPTIONS,
+  EXPERIENCE_OPTIONS,
+  SCHEDULE_OPTIONS
+} from '../constants'
 
 export default {
-    name: 'SearchFilter',
-    components: { ItisSelect },
-    data() {
-        return {
-            // Начало
+  name: 'SearchFilter',
+  components: { ItisSelect },
+  data () {
+    return {
+      // Начало
 
-            // Конец
-            EDUCATION_LEVEL_OPTIONS,
-            EXPERIENCE_OPTIONS,
-            SCHEDULE_OPTIONS,
-        };
-    },
-    // Начало
+      // Конец
+      EDUCATION_LEVEL_OPTIONS,
+      EXPERIENCE_OPTIONS,
+      SCHEDULE_OPTIONS
+    }
+  }
+  // Начало
 
-    // Конец
-};
+  // Конец
+}
 </script>
 
 <style>

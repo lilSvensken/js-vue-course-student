@@ -102,6 +102,6 @@
 
 <script>
 export default {
-    name: "SadIcon",
-};
+  name: 'SadIcon'
+}
 </script>

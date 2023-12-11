@@ -16,20 +16,20 @@
 </template>
 
 <script>
-import loaderMixin from '../loaderMixin.js';
+import loaderMixin from '../loaderMixin.js'
 
 export default {
-    name: 'TestComponent',
-    mixins: [
-        loaderMixin,
-    ],
-    methods: {
-        startLoading() {
-            this.setLoading(true);
-        },
-        finishLoading() {
-            this.setLoading(false);
-        },
+  name: 'TestComponent',
+  mixins: [
+    loaderMixin
+  ],
+  methods: {
+    startLoading () {
+      this.setLoading(true)
     },
-};
+    finishLoading () {
+      this.setLoading(false)
+    }
+  }
+}
 </script>
