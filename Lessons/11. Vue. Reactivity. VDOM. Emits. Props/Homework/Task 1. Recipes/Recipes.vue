@@ -1,8 +1,9 @@
 <template>
     <div class="recipes">
         <!--Начало-->
-
-        <!--Конец-->
+      <new-recipe-form @addRecipe="addRecipe" />
+      <recipes-container :recipes="recipes" @removeRecipe="removeRecipe" />
+      <!--Конец-->
     </div>
 </template>
 
@@ -10,7 +11,23 @@
 export default {
     name: 'Recipes',
     // Начало
-
+  data() {
+    return {
+      recipes: [],
+    };
+  },
+  methods: {
+    addRecipe(recipe) {
+      this.recipes.push(recipe);
+    },
+    removeRecipe(index) {
+      this.recipes.splice(index, 1);
+    },
+  },
+  components: {
+    NewRecipeForm,
+    RecipesContainer,
+  },
     // Конец
 };
 </script>
