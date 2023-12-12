@@ -20,74 +20,72 @@ const ADDITIONAL_BUTTONS = [
     },
 ];
 
-
-const getSumOfInput = (text) => text
-    .split('+')
-    .reduce((sum, num) => sum + Number(num), 0);
-
+const getSumOfText = (text) => text
+  .split('+')
+  .filter((el) => el)
+  .reduce((acc, num) => acc + Number(num), 0);
 
 const setCalculator = () => {
-    const buttons = document.querySelector('.calc__buttons')
-    for (let i = 0; i<=9; i++) {
-        const button = document.createElement('button')
-        button.classList.add('btn', 'btn-dark');
-        button.dataset.type = TYPES.DIGIT
-        button.textContent = i
-        buttons.append(button)
+    // Начало
+    const textBlock = document.querySelector('.calc__main');
+    const buttonsBlock = document.querySelector('.calc__buttons');
+    
+    let buttonElements = [];
+    for (let i = 0; i <= 9; i += 1) {
+        buttonElements.push({ text: i, type: TYPES.DIGIT });
     }
-    ADDITIONAL_BUTTONS.forEach((sign) => {
-        const button = document.createElement('button')
+    buttonElements = [ ...buttonElements, ...ADDITIONAL_BUTTONS ];
+    
+    buttonElements.forEach(({ type, text }) => {
+        const button = document.createElement('button');
         button.classList.add('btn', 'btn-dark');
-        button.dataset.type = sign.type
-        button.textContent = sign.text
-        buttons.append(button)
-    })
-
-    const result = document.querySelector('.calc__result')
-    const textResult = document.createElement('span')
-    textResult.textContent = 'Резултат:'
-    const countOfResult = document.createElement('span')
-    countOfResult.classList.add('calc__result-number')
-    countOfResult.textContent = 0
-    result.append(textResult,countOfResult)
-
-    const setOfSign = document.querySelector('.calc__main')
-
-    const allButtons = buttons.querySelectorAll('button');
-    [ ...allButtons ].forEach((button) => {
-            const typeOfButton = button.dataset.type
-
-        if (typeOfButton === TYPES.DIGIT) {
+        button.dataset.type = type;
+        button.textContent = text;
+        
+        buttonsBlock.append(button);
+    });
+    
+    const resultBlock = document.querySelector('.calc__result');
+    const resultTextElement = document.createElement('span');
+    resultTextElement.textContent = 'Результат: ';
+    
+    const resultNumberElement = document.createElement('span');
+    resultNumberElement.classList.add('calc__result-number');
+    resultNumberElement.textContent = 0;
+    
+    resultBlock.append(resultTextElement, resultNumberElement);
+    
+    const buttons = buttonsBlock.querySelectorAll('button');
+    [ ...buttons ].forEach((button) => {
+        const buttonType = button.dataset.type;
+        
+        if (buttonType === TYPES.DIGIT) {
             button.addEventListener('click', (event) => {
-                setOfSign.textContent = setOfSign.textContent + button.textContent
+                const currentDigit = button.textContent;
+                textBlock.textContent = `${textBlock.textContent}${currentDigit}`;
             });
-
-        }
-        else if (typeOfButton === TYPES.PLUS) {
+        } else if (buttonType === TYPES.PLUS) {
             button.addEventListener('click', (event) => {
-                setOfSign.textContent = setOfSign.textContent + '+'
+                textBlock.textContent = textBlock.textContent + '+';
             });
-
-        }
-        else if (typeOfButton === TYPES.RESULT) {
+        } else if (buttonType === TYPES.RESULT) {
             button.addEventListener('click', (event) => {
-                const dataOfResult = setOfSign.textContent
-                const sumOfAll = getSumOfInput(dataOfResult)
-                const result = document.querySelector('.calc__result-number')
-                result.textContent = sumOfAll
+                const resultText = textBlock.textContent;
+                const sum = getSumOfText(resultText);
+                
+                const resultBlock = document.querySelector('.calc__result-number');
+                resultBlock.textContent = sum;
             });
-
-        }
-        else if (typeOfButton === TYPES.RESET) {
+            
+        } else if (buttonType === TYPES.RESET) {
             button.addEventListener('click', (event) => {
-                const result = document.querySelector('.calc__result-number')
-                setOfSign.textContent = null
-                result.textContent = 0
+                const resultBlock = document.querySelector('.calc__result-number');
+                resultBlock.textContent = 0;
+                textBlock.textContent = '';
             });
         }
-    })
-
-
+    });
+    // Конец
 };
 
 export default setCalculator;
