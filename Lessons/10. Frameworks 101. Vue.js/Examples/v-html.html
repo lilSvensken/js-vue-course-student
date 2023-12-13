@@ -8,6 +8,7 @@
     <body>
         <div id="app">
             <div v-html="innerHTML"></div>
+            <div v-html="someHTML"></div>
         </div>
 
         <script>
@@ -16,6 +17,7 @@
                 data() {
                     return {
                         innerHTML: '<span>внутренний текст в спане<span>',
+                        someHTML: '<div>Текст в диве</div>'
                     };
                 },
             });

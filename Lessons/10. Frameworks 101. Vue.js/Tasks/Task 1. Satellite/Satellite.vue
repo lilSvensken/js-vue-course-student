@@ -4,6 +4,7 @@
             <span>Радиус орбиты спутника:</span>
             <!--Начало-->
 
+
             <!--Конец-->
         </div>
         <div class="satellite__speed">
@@ -18,8 +19,7 @@
 
 <script>
 export default {
-    name: 'Satellite',
-    // Начало
+  // Начало
 
     // Конец
 };
