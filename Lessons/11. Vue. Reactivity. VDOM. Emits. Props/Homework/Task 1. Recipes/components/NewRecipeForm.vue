@@ -1,7 +1,54 @@
 <template>
     <div class="recipe-form">
         <!--Начало-->
-
+      <h3>
+        Создать новый рецепт
+      </h3>
+      <div class="recipe-form__block">
+        <label class="form-label">
+          Название нового рецепта
+        </label>
+        <input
+            type="text"
+            class="form-control recipe-form__name"
+        >
+      </div>
+      <div class="recipe-form__block">
+        <label class="form-label">
+          Ингредиенты
+        </label>
+        <textarea class="form-control recipe-form__ingredients"></textarea>
+      </div>
+      <div class="recipe-form__block">
+        <label class="form-label">
+          Последовательность действий
+        </label>
+        <textarea class="form-control recipe-form__recipe-text"></textarea>
+      </div>
+      <div class="recipe-form__block"><label class="form-label">
+        Время приготовления
+      </label>
+        <select class="form-select recipe-form__cook-time" v-model="selectedTime">
+          <option v-for="option in timeOptions" :value="option.value">
+            {{ option.text }}
+          </option>
+          <!-- другие опции -->
+        </select>
+      </div>
+      <div class="recipe-form__block">
+        <input
+            type="checkbox"
+            class="form-check-input"
+        >
+        <label class="form-check-label">
+          Вегетарианское блюдо
+        </label>
+      </div>
+      <div class="recipe-form__block">
+        <button class="btn btn-dark recipe-form__add-button" @click="addRecipe">
+          Добавить рецепт
+        </button>
+      </div>
         <!--Конец-->
     </div>
 </template>
@@ -33,7 +80,17 @@ export default {
         };
     },
     // Начало
-
+    methods: {
+      addRecipe() {
+        this.$axios.post('/api/recipes', this.$data)
+            .then(resp => {
+              console.log(resp);
+            })
+            .catch(err => {
+              console.error(err);
+            });
+      }
+    }
     // Конец
 };
 </script>
