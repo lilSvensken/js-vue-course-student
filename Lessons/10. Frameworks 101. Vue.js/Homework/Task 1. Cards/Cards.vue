@@ -1,22 +1,51 @@
 <template>
     <!--Начало-->
-
-    <!--Конец-->
+  <div class="card-container">
+    <div v-for="card in cards" :key="card.id" class="card">
+      <img :src="card.src" class="card-img-top" alt="фото товара"/>
+      <div class="card-body">
+        <h5 class="card-title">{{ card.head }}</h5>
+        <h4 class="card-title">{{ card.price }}</h4>
+        <p class="card-text">{{ card.description }}</p>
+        <div class="card__buttons">
+          <button @click="plus(card)" class="btn btn-primary button-plus">+</button>
+          <button @click="minus(card)" class="btn btn-primary button-minus">-</button>
+          <div>{{ card.number }} шт.</div>
+        </div>
+        <div v-if="card.number > card.max" class="card__alert alert alert-danger">
+          Данного товара доступно только {{ card.max }} шт.
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Конец-->
 </template>
 
 <script>
 export default {
     name: 'Cards',
-    data() {
-        // Массив данных для карточек товаров уже получен
-        const cards = this.$root.data;
-        return {
-            cards,
-        };
+  data() {
+    // Массив данных для карточек товаров уже получен
+    const cards = this.$root.data;
+    return {
+      cards
+    };
+  },
+  // Начало
+  methods: {
+    // Методы для увеличения и уменьшения количества товара
+    plus(card) {
+      if (card.number < card.max) {
+        card.number++;
+      }
     },
-    // Начало
-
-    // Конец
+    minus(card) {
+      if (card.number > 0) {
+        card.number--;
+      }
+    },
+  },
+  // Конец
 };
 </script>
 
