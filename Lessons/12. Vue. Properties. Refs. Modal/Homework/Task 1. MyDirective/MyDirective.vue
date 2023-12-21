@@ -10,7 +10,16 @@
         <div class="quotes__container">
             <template v-for="quote in quotes">
                 <!--Начало-->
+                <div class="quotes__quote-block" v-show="getVisibility(quote.text)">
 
+                    <div class="quotes__quote-text" v-replace="searchText + '$' + quote.text">
+                        "{{ quote.text }}"
+                    </div>
+                    <div class="quotes__quote-author">
+                        (c) {{ quote.author }}
+                    </div>
+
+                </div>
                 <!--Конец-->
             </template>
         </div>
@@ -21,7 +30,38 @@
 export default {
     name: 'MyDirective',
     // Начало
+    directives: {
+        replace: {
+            update: (element, bindings) => {
+                const searchText = bindings.value.split('$')[0];
+                element.innerText = bindings.value.split('$')[1];
 
+                if (searchText !== "") {
+                    const text = "\"" + element.innerText + "\"";
+                    let finalText = text;
+                    let startIndex = 0;
+                    let indexes = [];
+                    let matchIndex = text.indexOf(searchText, startIndex);
+
+                    while (matchIndex > -1) { // чтобы найти все соответсвия в тексте, а не только первое
+                        indexes.push(matchIndex);
+                        startIndex = matchIndex + searchText.length;
+                        matchIndex = text.indexOf(searchText, startIndex);
+                    }
+
+                    let i = 0;
+                    const tagLen = 13;
+                    indexes.forEach((index) => {
+                        finalText = finalText.slice(0, index + i * tagLen) + '<span>' +
+                            finalText.slice(index + i * tagLen, index + searchText.length + i * tagLen) + '</span>' +
+                            finalText.slice(index + searchText.length + i * tagLen);
+                        i++;
+                    })
+                    element.innerHTML = finalText;
+                }
+            }
+        }
+    },
     // Конец
     methods: {
         getVisibility(text) {
