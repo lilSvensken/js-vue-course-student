@@ -21,7 +21,15 @@
 export default {
     name: 'MyDirective',
     // Начало
-
+  directives: {
+    replace: {
+      update: function (el, binding) {
+        const searchText = binding.value.split('$')[0];
+        const fullText = binding.value.split('$')[1];
+        el.innerHTML = fullText.replace(searchText, '<span>' + searchText + '</span>');
+      }
+    }
+  },
     // Конец
     methods: {
         getVisibility(text) {
