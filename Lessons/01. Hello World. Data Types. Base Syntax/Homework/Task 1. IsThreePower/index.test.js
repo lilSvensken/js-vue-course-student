@@ -19,3 +19,4 @@ describe('01.h.1 isThreePower', () => {
         expect(isThreePower(90)).toBe(false);
     });
 });
+
