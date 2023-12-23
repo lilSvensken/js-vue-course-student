@@ -1,6 +1,18 @@
 <template>
     <!--Начало-->
-
+    <div class="carousel">
+        <div class="carousel-inner">
+            <div v-for="(image, index) in images" :key="index" class="carousel-item" :class="{ active: index === currentIndex }">
+                <img class="d-block w-100" :src="image" alt="Carousel Image" />
+            </div>
+        </div>
+        <button @click="prevSlide" class="carousel-control-prev">
+        <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button @click="nextSlide" class="carousel-control-next">
+        <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
     <!--Конец-->
 </template>
 
@@ -12,10 +24,18 @@ export default {
         const images = this.$root.data;
         return {
             images,
+            currentIndex: 0,
         };
     },
     // Начало
-
+    methods: {
+        prevSlide() {
+            this.currentIndex = (this.currentIndex - 1 + this.images.length) % this.images.length;
+        },
+        nextSlide() {
+            this.currentIndex = (this.currentIndex + 1) % this.images.length;
+        },
+    },
     // Конец
 };
 </script>
