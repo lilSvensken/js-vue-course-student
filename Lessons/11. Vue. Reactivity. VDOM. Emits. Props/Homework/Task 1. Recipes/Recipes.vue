@@ -1,9 +1,7 @@
 <template>
     <div class="recipes">
-        <!--Начало-->
-        <NewRecipeForm @addRecipe="addRecipe" />
-        <RecipesContainer :recipes="recipes" @removeRecipe="removeRecipe" />
-        <!--Конец-->
+        <newRecipeForm @addRecipe="addRecipe" />
+        <recipesContainer :recipes="recipes" @removeRecipe="removeRecipe" />
     </div>
 </template>
 
@@ -13,14 +11,13 @@ import RecipesContainer from "./components/RecipesContainer.vue";
 
 export default {
     name: 'Recipes',
-    // Начало
-    // components: {
-    //     NewRecipeForm,
-    //     RecipesContainer,
-    // },
+    components: {
+        'newRecipeForm': NewRecipeForm,
+        'recipesContainer': RecipesContainer,
+    },
     data() {
         return {
-        recipes: [],
+            recipes: [],
         };
     },
     methods: {
@@ -31,7 +28,6 @@ export default {
             this.recipes.splice(index, 1);
         },
     },
-    // Конец
 };
 </script>
 

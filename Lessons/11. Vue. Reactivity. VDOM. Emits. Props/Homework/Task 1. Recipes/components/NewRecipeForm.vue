@@ -22,7 +22,7 @@
                     Последовательность действий
                 </label>
                 <textarea class="form-control recipe-form__text"
-                          v-model="recipeAction">
+                    v-model="recipeAction">
                 </textarea>
             </div>
             <div class="recipe-form__block">
@@ -102,14 +102,14 @@ export default {
     methods: {
         addRecipe() {
             this.idRecept++;
-            this.newRecipe.push({
+            this.newRecipe = {
                 id: this.idRecept,
                 recipeName: this.recipeName,
                 recipeIngredients: this.recipeIngredients,
                 recipeAction: this.recipeAction,
                 selectedTime: this.selectedTime,
                 isVegan: this.isVegan
-            })
+            }
             this.$emit('add-recipe', this.newRecipe);
 
             this.selectedOption = 1;
