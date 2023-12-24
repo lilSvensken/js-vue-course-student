@@ -9,9 +9,14 @@
         />
         <div class="quotes__container">
             <template v-for="quote in quotes">
-                <!--Начало-->
-
-                <!--Конец-->
+                <div class="quotes__quote-block" v-show="getVisibility(quote.text)">
+                  <div class="quotes__quote-text" v-replace="searchText + '$' + quote.text">
+                    "{{quote.text}}"
+                  </div>
+                  <div class="quotes__quote-author">
+                    (c) {{quote.author}}
+                  </div>
+                </div>
             </template>
         </div>
     </div>
@@ -20,9 +25,15 @@
 <script>
 export default {
     name: 'MyDirective',
-    // Начало
-
-    // Конец
+    directives: {
+      replace: {
+        update: (element, binding) => {
+          const searchText = binding.value.split('$')[0];
+          const fullText = binding.value.split('$')[1];
+          element.innerHTML = fullText.replace(searchText, '<span>' + searchText + '</span>');
+        }
+      }
+    },
     methods: {
         getVisibility(text) {
             return text.includes(this.searchText);

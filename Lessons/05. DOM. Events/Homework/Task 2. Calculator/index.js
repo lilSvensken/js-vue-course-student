@@ -48,7 +48,7 @@ const setCalculator = () => {
                 mainBlock.textContent += `${button.textContent}`;
                 number += `${button.textContent}`;
             } else if (buttonType === 'plus') {
-                mainBlock.textContent += ' + ';
+                mainBlock.textContent += '+';
                 result += Number(number);
                 number = ''
             } else if (buttonType === 'equals') {
