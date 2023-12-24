@@ -1,6 +1,16 @@
 <template>
     <!--Начало-->
+    <div class="card-block">
+      <div class="card-block__image">
+<!--        <slot name="image"/>-->
+        <slot name="image"></slot>
+      </div>
 
+      <div class="card-block_info">
+<!--        <slot name="info"/>-->
+        <slot name="info"></slot>
+      </div>
+    </div>
     <!--Конец-->
 </template>
 
