@@ -1,19 +1,9 @@
 const getTextFromUrl = (url) => {
-    // Начало
-    const o = new URL(url);
-    var par = o.searchParams;
-    var str = par.toString();
-    let rep_text = str.replaceAll('text=', ' ');
-    let rep_c = rep_text.replaceAll('coma', ',');
-    let rep_d = rep_c.replaceAll('dot', '.');
-    let space = rep_d.replaceAll('space', ' ');
-    let sc = space.replaceAll('semicolon', ';');
-    var apth = sc.replaceAll('apostrophe', "'");
-    var ampRepl = apth.replaceAll('&', '');
-    var ravno = ampRepl.replaceAll('=', '');
-    var deleteProbel = ravno.replaceAll("' ", "'");
-    return deleteProbel;
-    // Конец
+    const baseUrl = new URL(url)
+    const params = baseUrl.searchParams
+    let text = " " + params.toString().slice(5)
+    const result = text.replaceAll("&apostrophe=&text=", "'").replaceAll('&text=', ' ').replaceAll('&coma=', ',').replaceAll('&dot=', '.')
+    return result
 };
 
-export default getTextFromUrl;
+export default getTextFromUrl

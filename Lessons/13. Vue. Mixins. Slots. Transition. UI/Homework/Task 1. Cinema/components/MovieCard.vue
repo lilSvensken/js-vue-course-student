@@ -1,18 +1,26 @@
 <template>
-    <!--Начало-->
-
-    <!--Конец-->
+    <CardBlock>
+        <template v-slot:default>
+            
+        </template>
+        <template v-slot:info>
+            
+        </template>
+    </CardBlock>
 </template>
 
 <script>
+
 import CardBlock from './CardBlock.vue';
 
 export default {
-    name: 'MovieCard',
+    name: 'MovieCard', 
     components: { CardBlock },
-    // Начало
 
-    // Конец
+    props: {
+        movie: Object,
+    },
+
 };
 </script>
 

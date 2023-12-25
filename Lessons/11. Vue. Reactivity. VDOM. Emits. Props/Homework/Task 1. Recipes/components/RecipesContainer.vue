@@ -1,13 +1,26 @@
 <template>
-    <!--Начало-->
-
-    <!--Конец-->
+    <div class="recipe-container">
+        <h3>Мои рецепты</h3>
+        <div v-if="recipes.length === 0" class="recipe-container__no-recipes">Рецептов нет</div>
+        <div class="card" v-for="(recipe, index) in recipes" :key="index">
+            <div class="card-body">
+                <div class="card-body__header">
+                    <button class="btn btn-light card-body__remove-button" @click="removeRecipe(index)">Удалить рецепт</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
-// Начало
-
-// Конец
+export default {
+    props: ['recipes'],
+    methods: {
+        removeRecipe(index) {
+            this.$emit('removeRecipe', index); 
+        }
+    }
+};
 </script>
 
 <style>

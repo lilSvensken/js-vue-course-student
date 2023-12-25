@@ -1,6 +1,6 @@
 <template>
     <div class="quotes">
-        <h3>Введите текст для поиск по нему цитат</h3>
+        <h3>Введите текст для поиска по нему цитат</h3>
         <input
             class="form-control form-control-lg"
             type="text"
@@ -8,25 +8,31 @@
             placeholder="Жизнь"
         />
         <div class="quotes__container">
-            <template v-for="quote in quotes">
-                <!--Начало-->
-
-                <!--Конец-->
+            <template v-for="quote in filteredQuotes">
+                <div class="quotes__quote-block">
+                    <div class="quotes__quote-text">
+                        <p v-replace:searchText="quote.text"></p>
+                    </div>
+                    <div class="quotes__quote-author">
+                        (c) {{ quote.author }}
+                    </div>
+                </div>
             </template>
         </div>
     </div>
 </template>
-
 <script>
 export default {
     name: 'MyDirective',
-    // Начало
-
-    // Конец
     methods: {
         getVisibility(text) {
             return text.includes(this.searchText);
         },
+    },
+    computed: {
+        filteredQuotes() {
+            return this.quotes.filter(quote => this.getVisibility(quote.text));
+        }
     },
     data() {
         return {
@@ -115,6 +121,20 @@ export default {
 
             ],
         };
+    },
+    directives: {
+        replace: {
+            bind(el, binding) {
+                const searchText = binding.expression;
+                const regex = new RegExp(searchText, 'gi');
+                el.innerHTML = el.innerHTML.replace(regex, match => <span>${match}</span>);
+            },
+            update(el, binding) {
+                const searchText = binding.expression;
+                const regex = new RegExp(searchText, 'gi');
+                el.innerHTML = el.innerHTML.replace(regex, match => <span>${match}</span>);
+            }
+        }
     },
 };
 </script>

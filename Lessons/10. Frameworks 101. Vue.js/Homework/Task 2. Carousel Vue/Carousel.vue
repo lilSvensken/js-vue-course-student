@@ -1,22 +1,42 @@
 <template>
-    <!--Начало-->
-
-    <!--Конец-->
-</template>
+    <div class="carousel">
+      <div class="carousel-inner">
+        <div v-for="(image, index) in images" :key="index" :class="['carousel-item', { active: index === currentIndex } ]">
+          <img :src="image" class="d-block w-100" />
+        </div>
+      </div>
+      <button class="carousel-control-prev" @click="indexDecrease">
+          <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" @click="indexIncrease">
+          <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </template>
 
 <script>
 export default {
-    name: 'Carousel',
-    data() {
-        // Массив картинок уже получен
-        const images = this.$root.data;
-        return {
-            images,
-        };
+  name: 'Carousel',
+  props: {
+    data: {
+      type: Array,
+      default: () => []
+    }
+  },
+  data() {
+    return {
+      images: this.data,
+      currentIndex: 0
+    };
+  },
+  methods: {
+    indexIncrease() {
+      this.currentIndex = (this.currentIndex + 1) % this.images.length;
     },
-    // Начало
-
-    // Конец
+    indexDecrease() {
+      this.currentIndex = (this.currentIndex - 1 + this.images.length) % this.images.length;
+    }
+  }
 };
 </script>
 

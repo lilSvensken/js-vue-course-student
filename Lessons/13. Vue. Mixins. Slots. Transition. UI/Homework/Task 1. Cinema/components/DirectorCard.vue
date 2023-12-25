@@ -1,18 +1,22 @@
 <template>
-    <!--Начало-->
-
-    <!--Конец-->
+    <CardBlock>
+        <template v-slot:default>
+            
+        </template>
+        <template v-slot:info>
+            
+        </template>
+    </CardBlock>
 </template>
-
 <script>
 import CardBlock from './CardBlock.vue';
 
 export default {
-    name: 'DirectorCard',
+    name: 'DirectorCard', 
     components: { CardBlock },
-    // Начало
-
-    // Конец
+    props: {
+        director: Object, 
+    },
 };
 </script>
 

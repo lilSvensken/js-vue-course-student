@@ -1,8 +1,17 @@
 <template>
     <div class="recipe-form">
-        <!--Начало-->
-
-        <!--Конец-->
+        <h3>Создать новый рецепт</h3>
+        <div class="recipe-form__block">
+            <label class="form-label">Название нового рецепта</label>
+            <input type="text" class="form-control recipe-form__name">
+        </div>
+        <div class="recipe-form__block">
+            <label class="form-label">Ингредиенты</label>
+            <textarea class="form-control recipe-form__ingredients"></textarea>
+        </div>
+        <div class="recipe-form__block">
+            <button class="btn btn-dark recipe-form__add-button" @click="addRecipe">Добавить рецепт</button>
+        </div>
     </div>
 </template>
 
@@ -11,10 +20,12 @@ export default {
     name: 'NewRecipeForm',
     data() {
         return {
-            // Начало
-
-            // Конец
-            // Опции для селекта "Время приготовления"
+            name: '', 
+            ingredients: '', 
+            recipeText: '', 
+            cookTime: 5, 
+            isVegetarian: false, 
+           
             timeOptions: [
                 { value: 1, text: '5 минут' },
                 { value: 2, text: '10 минут' },
@@ -32,9 +43,23 @@ export default {
             ],
         };
     },
-    // Начало
-
-    // Конец
+    methods: {
+        addRecipe() {
+            const newRecipe = {
+                name: this.name,
+                ingredients: this.ingredients,
+                recipeText: this.recipeText,
+                cookTime: this.cookTime,
+                isVegetarian: this.isVegetarian
+            };
+            this.$emit('addRecipe', newRecipe); 
+            this.name = '';
+            this.ingredients = '';
+            this.recipeText = '';
+            this.cookTime = 5;
+            this.isVegetarian = false;
+        }
+    }
 };
 </script>
 
