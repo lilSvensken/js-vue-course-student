@@ -1,7 +1,12 @@
-const convertToBinary = num => (num >>> 0).toString(2);
-
 const getHammingWeight = (num) => {
-	return convertToBinary(num).split("").filter(item => item === '1').length;
+  let count=0;
+  const str = num.toString(2).split("");
+  const arr = str.map(Number);
+  for(let i = 0; i < arr.length ; i ++){
+    if(arr[i] === 1){
+      count++
+    }
+  }return count;
 };
 
 export default getHammingWeight;

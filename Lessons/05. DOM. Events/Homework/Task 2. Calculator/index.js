@@ -1,91 +1,83 @@
+
 const TYPES = {
-    DIGIT: 'digit',
-    PLUS: 'plus',
-    RESULT: 'result',
-    RESET: 'reset',
+  DIGIT: 'digit',
+  PLUS: 'plus',
+  RESULT: 'result',
+  RESET: 'reset',
 };
 
 const ADDITIONAL_BUTTONS = [
-    {
-        text: '+',
-        type: TYPES.PLUS,
-    },
-    {
-        text: '=',
-        type: TYPES.RESULT,
-    },
-    {
-        text: 'Сбросить',
-        type: TYPES.RESET,
-    },
+  {
+    text: '+',
+    type: TYPES.PLUS,
+  },
+  {
+    text: '=',
+    type: TYPES.RESULT,
+  },
+  {
+    text: 'Сбросить',
+    type: TYPES.RESET,
+  },
 ];
 
-const getSumOfText = (text) => text
-  .split('+')
-  .filter((el) => el)
-  .reduce((acc, num) => acc + Number(num), 0);
-
 const setCalculator = () => {
-    // Начало
-    const textBlock = document.querySelector('.calc__main');
-    const buttonsBlock = document.querySelector('.calc__buttons');
-    
-    let buttonElements = [];
-    for (let i = 0; i <= 9; i += 1) {
-        buttonElements.push({ text: i, type: TYPES.DIGIT });
-    }
-    buttonElements = [ ...buttonElements, ...ADDITIONAL_BUTTONS ];
-    
-    buttonElements.forEach(({ type, text }) => {
-        const button = document.createElement('button');
-        button.classList.add('btn', 'btn-dark');
-        button.dataset.type = type;
-        button.textContent = text;
-        
-        buttonsBlock.append(button);
-    });
-    
-    const resultBlock = document.querySelector('.calc__result');
-    const resultTextElement = document.createElement('span');
-    resultTextElement.textContent = 'Результат: ';
-    
-    const resultNumberElement = document.createElement('span');
-    resultNumberElement.classList.add('calc__result-number');
-    resultNumberElement.textContent = 0;
-    
-    resultBlock.append(resultTextElement, resultNumberElement);
-    
-    const buttons = buttonsBlock.querySelectorAll('button');
-    [ ...buttons ].forEach((button) => {
-        const buttonType = button.dataset.type;
-        
-        if (buttonType === TYPES.DIGIT) {
-            button.addEventListener('click', (event) => {
-                const currentDigit = button.textContent;
-                textBlock.textContent = `${textBlock.textContent}${currentDigit}`;
-            });
-        } else if (buttonType === TYPES.PLUS) {
-            button.addEventListener('click', (event) => {
-                textBlock.textContent = textBlock.textContent + '+';
-            });
-        } else if (buttonType === TYPES.RESULT) {
-            button.addEventListener('click', (event) => {
-                const resultText = textBlock.textContent;
-                const sum = getSumOfText(resultText);
-                
-                const resultBlock = document.querySelector('.calc__result-number');
-                resultBlock.textContent = sum;
-            });
-            
-        } else if (buttonType === TYPES.RESET) {
-            button.addEventListener('click', (event) => {
-                const resultBlock = document.querySelector('.calc__result-number');
-                resultBlock.textContent = 0;
-                textBlock.textContent = '';
-            });
-        }
-    });
-    // Конец
-};
+  const textBlock = document.querySelector('.calc__main');
+  const result = document.querySelector(".calc__result");
+  const calc_buttons = document.querySelector(".calc__buttons");
+  const resultTextElement = document.createElement('span');
+  resultTextElement.textContent = 'Результат: ';
 
+  const resultNumberElement = document.createElement('span');
+  resultNumberElement.classList.add('calc__result-number');
+  resultNumberElement.textContent = 0;
+  result.append(resultTextElement, resultNumberElement);
+
+  for (let i = 0; i <= 9; i++) {
+    const button = document.createElement('button');
+    button.classList.add('btn', 'btn-dark');
+    button.textContent = i.toString();
+    button.dataset.type = TYPES.DIGIT;
+    calc_buttons.append(button);
+  }
+
+  ADDITIONAL_BUTTONS.forEach((buttonData) => {
+    const button = document.createElement('button');
+    button.classList.add('btn', 'btn-dark');
+    button.textContent = buttonData.text;
+    button.dataset.type = buttonData.type;
+    calc_buttons.append(button);
+  });
+  const buttons_Array = document.querySelectorAll('button');
+  buttons_Array.forEach((button)=>{
+    const buttonType = button.dataset.type;
+    if(buttonType==='digit'){
+      button.addEventListener('click', ()=>{
+       const digit = button.textContent;
+        textBlock.textContent = textBlock.textContent + digit;
+      });
+    }else if(buttonType==='plus'){
+      button.addEventListener('click', ()=>{
+        textBlock.textContent = textBlock.textContent + '+';
+
+      });
+    }else if(buttonType==='result'){
+      button.addEventListener('click', ()=>{
+        const resultText =textBlock.textContent;
+        const sum = getsum(resultText);
+        resultNumberElement.textContent = sum;
+      });
+    } else if (buttonType === 'reset') {
+    button.addEventListener('click', (event) => {
+      const resultBlock = document.querySelector('.calc__result-number');
+      resultBlock.textContent = 0;
+      textBlock.textContent = '';
+    });
+  }
+
+  })
+};
+const getsum = (text) => text
+    .split('+')
+    .reduce((acc, num) => acc + Number(num), 0);
 export default setCalculator;

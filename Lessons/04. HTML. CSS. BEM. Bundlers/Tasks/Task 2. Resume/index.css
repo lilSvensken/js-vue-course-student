@@ -1,7 +1,20 @@
 .resume {
     padding: 10px;
     margin: 20px;
-    font-family: Verdana, Tahoma, sans-serif;
-    background: #ffeed6;
-    border-radius: 10px;
+    text-align: center;
+
+}
+.header__image{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+main{
+    text-align: left;
+
+    font-size : 20px ;
+}
+footer{
+    font-size : 20px ;
 }
