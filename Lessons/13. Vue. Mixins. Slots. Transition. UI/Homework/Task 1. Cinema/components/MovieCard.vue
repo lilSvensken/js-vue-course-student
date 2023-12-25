@@ -1,5 +1,16 @@
 <template>
     <!--Начало-->
+  <CardBlock>
+    <template #image>
+      <img :src="movie.image" alt="Постер фильма">
+    </template>
+    <template #info>
+      <div class="movie__info-name">{{ movie.name }}</div>
+      <div><span class="movie__title">Год:</span> {{ movie.year }}</div>
+      <div><span class="movie__title">Режиссер:</span> {{ movie.director }}</div>
+      <div><span class="movie__title">Жанр:</span> {{ movie.genre }}</div>
+    </template>
+  </CardBlock>
 
     <!--Конец-->
 </template>
@@ -11,6 +22,9 @@ export default {
     name: 'MovieCard',
     components: { CardBlock },
     // Начало
+  props: {
+    movie: Object,
+  },
 
     // Конец
 };

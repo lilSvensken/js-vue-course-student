@@ -10,7 +10,18 @@
         <div class="quotes__container">
             <template v-for="quote in quotes">
                 <!--Начало-->
-
+              <div class="quotes__container">
+                <template v-for="quote in quotes">
+                  <div class="quotes__quote-block" v-show="getVisibility(quote.text)">
+                    <div class="quotes__quote-text" v-replace="searchText">
+                      {{ quote.text }}
+                    </div>
+                    <div class="quotes__quote-author">
+                      {{ quote.author }}
+                    </div>
+                  </div>
+                </template>
+              </div>
                 <!--Конец-->
             </template>
         </div>
@@ -21,7 +32,24 @@
 export default {
     name: 'MyDirective',
     // Начало
-
+  directives: {
+    replace: {
+      // Хук привязки директивы к элементу
+      bind(el, binding) {
+        if (!binding.value) return;
+        const textToReplace = binding.value;
+        const regex = new RegExp(textToReplace, 'gi');
+        el.innerHTML = el.textContent.replace(regex, matchedText => `<span>${matchedText}</span>`);
+      },
+      // Хук обновления при изменении значения директивы
+      update(el, binding) {
+        if (!binding.value) return;
+        const textToReplace = binding.value;
+        const regex = new RegExp(textToReplace, 'gi');
+        el.innerHTML = el.textContent.replace(regex, matchedText => `<span>${matchedText}</span>`);
+      }
+    }
+  },
     // Конец
     methods: {
         getVisibility(text) {
