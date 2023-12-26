@@ -31,7 +31,14 @@ export default {
         };
     },
     // Начало
-
+  methods: {
+    prevImage() {
+      this.images.unshift(this.images.pop());
+    },
+    nextImage() {
+      this.images.push(this.images.shift());
+    },
+  },
     // Конец
 };
 </script>

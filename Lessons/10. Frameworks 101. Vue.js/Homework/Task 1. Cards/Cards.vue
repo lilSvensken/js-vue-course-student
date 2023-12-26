@@ -33,7 +33,21 @@ export default {
         };
     },
     // Начало
+// Начало
+  methods: {
+    increment(card) {
+      if (card.number <= card.max){
+        card.number++;
+      }
+    },
+    decrement(card){
+      if (card.number > 0) {
+        card.number--;
+      }
+    }
 
+
+  }
     // Конец
 };
 </script>
