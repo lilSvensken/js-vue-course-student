@@ -1,17 +1,30 @@
 <template>
     <div class="recipes">
-        <!--Начало-->
-
-        <!--Конец-->
+      <NewRecipeForm @addRecipe="addNewRecipe" />
+      <RecipesContainer :recipes="recipes" @deleteRecipe="deleteRecipe" />
     </div>
 </template>
 
 <script>
 export default {
     name: 'Recipes',
-    // Начало
-
-    // Конец
+  components: {
+    NewRecipeForm,
+    RecipesContainer,
+  },
+  data() {
+    return {
+      recipes: [],
+    };
+  },
+  methods: {
+    addNewRecipe(recipe) {
+      this.recipes.push(recipe);
+    },
+    deleteRecipe(index) {
+      this.recipes.splice(index, 1);
+    },
+  },
 };
 </script>
 

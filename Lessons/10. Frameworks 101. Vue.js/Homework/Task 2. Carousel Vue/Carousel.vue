@@ -1,7 +1,23 @@
 <template>
-    <!--Начало-->
 
-    <!--Конец-->
+  <div class="carousel">
+  <div class="carousel-inner">
+    <div
+        v-for="(image, index) in images"
+        :key="index"
+        :class="{ 'carousel-item': true, active: index === 0 }"
+    >
+      <img class="d-block w-100" :src="image" />
+    </div>
+  </div>
+  <button class="carousel-control-prev" @click="prevImage">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" @click="nextImage">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+  </div>
+
 </template>
 
 <script>
