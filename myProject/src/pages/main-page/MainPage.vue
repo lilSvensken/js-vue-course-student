@@ -1,7 +1,5 @@
 <template>
     <div>Main page</div>
-
-    
     <router-link to="/news">
     </router-link>
 
