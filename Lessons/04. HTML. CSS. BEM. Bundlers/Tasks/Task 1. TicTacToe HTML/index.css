@@ -1,3 +1,32 @@
 .tic-tac-toe {
+    .game-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 300px;
+        background-color: lightpink
+    }
+
+    .cell {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        font-size: 36px;
+        cursor: pointer;
+    }
+
+    .cell:hover {
+        background-color: lightpink;
+    }
+
+    .player-X {
+        color: deeppink;
+    }
+
+    .player-O {
+        color: lightskyblue;
+    }
 
 }

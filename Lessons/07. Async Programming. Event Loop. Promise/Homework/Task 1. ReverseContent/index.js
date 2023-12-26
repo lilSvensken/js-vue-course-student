@@ -1,7 +1,6 @@
 import { promises as fs } from 'fs';
 import path from 'path';
 
-
 // Метод для отладки. В итоговом решении использоваться не должен
 const getPath = (fileName) => path.join(__dirname, './__fixtures__', fileName);
 // Пример использования метода
@@ -9,9 +8,15 @@ const getPath = (fileName) => path.join(__dirname, './__fixtures__', fileName);
 
 
 const reverseContent = (filepath) => {
-    // Начало
-
-    // Конец
+    return new Promise((resolveCallback, rejectCallback) => {
+        fs.readFile(filepath, 'utf-8')
+            .then((text) => {
+                const lines = text.split('\n');
+                const reversedLines = lines.reverse();
+                return fs.writeFile(filepath, reversedLines.join('\n'), 'utf-8');
+            })
+            .then(resolveCallback)
+            .catch(rejectCallback)
+    });
 };
-
 export default reverseContent;

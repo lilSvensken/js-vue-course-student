@@ -1,19 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+
         <meta charset="UTF-8">
-        <title>Крести-Нолики</title>
+        <title>Tik tak toe game by Amy </title>
         <link
             rel="stylesheet"
             type="text/css"
             href="./index.css"
         >
+        <style>
+            body {
+                background-color: #FADBD8    ;
+            }
+        </style>
     </head>
-    <body>
-        <div class="tic-tac-toe">
-            <!-- Начало -->
+    <style>
+        .game-container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 400px;
+        }
 
-            <!-- Конец -->
-        </div>
+        .cell {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 120px;
+            height: 120px;
+            border: 2px solid coral;
+            font-size: 36px;
+            cursor: pointer;
+        }
+
+        .cell:hover {
+            background-color: lightcoral;
+        }
+    </style>
+
+    <body>
+
+    <h1>¡Bienvenido- welcome, let's playy!</h1>
+    <div class="game-container">
+        <div class="cell" onclick="markCell(0, 0)"></div>
+        <div class="cell" onclick="markCell(0, 1)"></div>
+        <div class="cell" onclick="markCell(0, 2)"></div>
+        <div class="cell" onclick="markCell(1, 0)"></div>
+        <div class="cell" onclick="markCell(1, 1)"></div>
+        <div class="cell" onclick="markCell(1, 2)"></div>
+        <div class="cell" onclick="markCell(2, 0)"></div>
+        <div class="cell" onclick="markCell(2, 1)"></div>
+        <div class="cell" onclick="markCell(2, 2)"></div>
+    </div>
+
+    <script>
+        var currentPlayer = "X";
+        var gameBoard = [
+            ["", "", ""],
+            ["", "", ""],
+            ["", "", ""]
+        ];
+
+        function markCell(row, col) {
+            if (gameBoard[row][col] === "") {
+                gameBoard[row][col] = currentPlayer;
+                document.getElementsByClassName("cell")[row*3 + col].innerHTML = currentPlayer;
+                switchPlayer();
+            }
+        }
+
+        function switchPlayer() {
+            currentPlayer = currentPlayer === "X" ? "O" : "X";
+        }
+    </script>
     </body>
 </html>
