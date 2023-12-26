@@ -14,13 +14,47 @@
             type="text/css"
             href="./index.css"
         >
+        <script type="module" src="../index.js"></script>
+
     </head>
     <body>
-        <div class="main"></div>
+        <div id="host" class="main">
+            <button type="button" id="btn1" class="btn-2" name="btnName">BUTTON1</button>
+            <button type="button" id="btn2" class="btn-2" name="btnName">BUTTON2</button>
+            <button type="button" id="btn3" class="btn-2" name="btnName">BUTTON3</button>
+        
+            <button id="element">uniqueButton</button>
+            
+        </div>
+
+        <form id="form">
+            <label>
+                <input type="checkbox">
+                <span>Yes, I am</span>
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="var" value="1">
+                <span>Var 1</span>
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="var" value="2">
+                <span>Var 2</span>
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="var" value="3">
+                <span>Var 2</span>
+            </label>
+            <button type="submit">SEND</button>
+        </form>
+        <div id="block" style="width: 500px; height: 200px; background: gray;">
+            Common block
+        </div>
     </body>
-    <script type="module" src="../index.js"></script>
-    <script type="module">
-        import setCounter from '../index.js';
-        setCounter();
-    </script>
+
+    <style>
+        
+    </style>
 </html>

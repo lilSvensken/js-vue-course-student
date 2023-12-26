@@ -5,10 +5,11 @@ const javaScriptData = {
     cool: true,
 };
 
-const addECMAInfo = () => {
-    // Начало
-
-    // Конец
+const addECMAInfo = (jSD) => {
+    return {
+        ...javaScriptData,
+        currentECMA: 2023  
+    };
 };
 
 export default addECMAInfo;

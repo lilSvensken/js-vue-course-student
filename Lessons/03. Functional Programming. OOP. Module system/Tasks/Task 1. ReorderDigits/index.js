@@ -1,5 +1,10 @@
 const reorderDigits = (type, ...numbers) => {
-	return numbers.sort((a, b) => type === 'asc' ? a - b : b - a);
+    if (type === 'asc'){
+        numbers.sort((a, b) => a - b)
+    }
+    else if (type === 'desc'){
+        numbers.sort((a, b) => b - a)
+    }
 };
 
 export default reorderDigits;

@@ -7,9 +7,14 @@
 // import axios from 'axios';
 
 const setCatGallery = () => {
-    // Начало
-
-    // Конец
+    const main_container = document.querySelector('.main__container');
+    for(let i = 0; i < 10; i++){
+        const image = document.createElement('img');
+        fetch('https://api.thecatapi.com/v1/images/search')
+            .then((data) => data.json())
+            .then((data) => image.src = data[0].url)
+        main_container.append(image);
+    }
 };
 
 export default setCatGallery;
